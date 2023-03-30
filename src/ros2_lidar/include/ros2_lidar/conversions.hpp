@@ -16,7 +16,7 @@
 #include "geometry_msgs/msg/transform_stamped.hpp"
 #include "sensor_msgs/msg/laser_scan.hpp"
 #include "tf2/LinearMath/Transform.h"
-#include "tf2_geometry_msgs/tf2_geometry_msgs.hpp"
+#include "tf2_geometry_msgs/tf2_geometry_msgs.h"
 #include "lidar_msgs/msg/metadata.hpp"
 
 #include "ros2_lidar/OS1/OS1.hpp"

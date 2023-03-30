@@ -16,7 +16,7 @@ ros2_ws/src
 #### 4.ros2 环境配置
 
 ```
-~/ros2_ws$ source /opt/ros/humble/setup.bash
+~/ros2_ws$ source /opt/ros/galactic/setup.bash
 ```
 
 #### 5.执行编译
@@ -40,7 +40,7 @@ ros2_ws/src
 #### 8.执行2d ,参数见 param/ole2dv2.yaml
 
 ```
-~/ros2_ws$ros2 launch install/ros2_lidar/share/ros2_lidar/launch/ole2dv2_launch.py
+~/ros2_ws$ros2 launch ros2_ouster ole2dv2_launch.py
 ```
 
 #### 9.新建终端启动ros2 环境配置 后执行rviz2

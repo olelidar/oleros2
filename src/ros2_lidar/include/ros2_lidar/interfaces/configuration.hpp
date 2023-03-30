@@ -12,14 +12,12 @@ struct Configuration
 {
   std::string lidar_ip;
   std::string computer_ip;
-  int imu_port;
   int lidar_port;
   std::string lidar_mode;
   std::string timestamp_mode;
 
   std::string lidar_vendor;
   int lidar_packet_size;
-  int imu_packet_size;
 
 };
 

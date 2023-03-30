@@ -39,16 +39,16 @@ struct client
   ~client()
   {
     close(lidar_fd);
-    close(imu_fd);
+
   }
 
-  int lidar_fd{2368};  // modified by zyl
-  int imu_fd{9866};    // modified by zyl
+  int lidar_fd{2368};  
+
   Json::Value meta;
 };
 
-const size_t lidar_packet_bytes = 1206;// modified by zyl
-const size_t imu_packet_bytes = 842;   // modified by zyl
+const size_t lidar_packet_bytes = 1206;
+
 
 /**
  * Connect to and configure the sensor and start listening for data
@@ -110,17 +110,17 @@ inline int udp_data_socket(int port)
 /**
  * Connect to and configure the sensor and start listening for data
  * @param lidar_port port on which the sensor will send lidar data
- * @param imu_port port on which the sensor will send imu data
+
  * @return pointer owning the resources associated with the connection
  */
-inline std::shared_ptr<client> init_client(int lidar_port = 2368, int imu_port = 9866)
+inline std::shared_ptr<client> init_client(int lidar_port = 2368)
 {
   auto cli = std::make_shared<client>();
 
   int lidar_fd = udp_data_socket(lidar_port);
-  int imu_fd = udp_data_socket(imu_port);
+  
   cli->lidar_fd = lidar_fd;
-  cli->imu_fd = imu_fd;
+
   return cli;
 }
 
@@ -130,21 +130,20 @@ inline std::shared_ptr<client> init_client(int lidar_port = 2368, int imu_port =
  * @param cli client returned by init_client associated with the connection
  * @param timeout_sec seconds to block while waiting for data
  * @return ClientState s where (s & ERROR) is true if an error occured, (s &
- * LIDAR_DATA) is true if lidar data is ready to read, and (s & IMU_DATA) is
- * true if imu data is ready to read
+ * LIDAR_DATA) is true if lidar data is ready to read
  */
 inline ros2_lidar::ClientState poll_client(const client & c, const int timeout_sec = 1)
 {
   fd_set rfds;
   FD_ZERO(&rfds);
   FD_SET(c.lidar_fd, &rfds);
-  FD_SET(c.imu_fd, &rfds);
+
 
   timeval tv;
   tv.tv_sec = timeout_sec;
   tv.tv_usec = 0;
 
-  int max_fd = std::max(c.lidar_fd, c.imu_fd);
+  int max_fd = c.lidar_fd;
 
   int retval = select(max_fd + 1, &rfds, NULL, NULL, &tv);
 
@@ -156,9 +155,6 @@ inline ros2_lidar::ClientState poll_client(const client & c, const int timeout_s
   } else if (retval) {
     if (FD_ISSET(c.lidar_fd, &rfds)) {
       return ros2_lidar::ClientState::LIDAR_DATA;
-    }
-    if (FD_ISSET(c.imu_fd, &rfds)) {
-      return ros2_lidar::ClientState::IMU_DATA;
     }
   }
   return ros2_lidar::ClientState::TIMEOUT;
@@ -197,17 +193,7 @@ inline bool read_lidar_packet(const client & cli, uint8_t * buf, uint16_t packet
   return recv_fixed(cli.lidar_fd, buf, packet_size);
 }
 
-/**
- * Read imu data from the sensor. Will not block.
- * @param cli client returned by init_client associated with the connection
- * @param buf buffer to which to write imu data. Must be at least
- * imu_packet_bytes + 1 bytes
- * @return true if an imu packet was successfully read
- */
-inline bool read_imu_packet(const client & cli, uint8_t * buf, uint16_t packet_size)
-{
-  return recv_fixed(cli.imu_fd, buf, packet_size);
-}
+
 
 }  // namespace OS1
 

@@ -10,7 +10,6 @@
 #include "ros2_lidar/conversions.hpp"
 #include "ros2_lidar/string_utils.hpp"
 #include "ros2_lidar/OS1/processors/image_processor.hpp"
-#include "ros2_lidar/OS1/processors/imu_processor.hpp"
 #include "ros2_lidar/OS1/processors/pointcloud_processor.hpp"
 #include "ros2_lidar/OS1/processors/scan_processor.hpp"
 
@@ -19,11 +18,10 @@ namespace ros2_lidar
 
 constexpr std::uint32_t OS1_PROC_IMG = (1 << 0);
 constexpr std::uint32_t OS1_PROC_PCL = (1 << 1);
-constexpr std::uint32_t OS1_PROC_IMU = (1 << 2);
 constexpr std::uint32_t OS1_PROC_SCAN = (1 << 3);
 
 constexpr std::uint32_t OS1_DEFAULT_PROC_MASK =
-  OS1_PROC_IMG | OS1_PROC_PCL | OS1_PROC_IMU | OS1_PROC_SCAN;
+  OS1_PROC_IMG | OS1_PROC_PCL | OS1_PROC_SCAN;
 
 /**
  * Transforms a data processor mask-like-string into a mask value
@@ -31,8 +29,7 @@ constexpr std::uint32_t OS1_DEFAULT_PROC_MASK =
  * We define a mask-like-string to be a pipe-separated list of
  * data processor suffixes. For example, all of the following
  * are valid:
- *
- * IMG|PCL|IMU|SCAN
+ 
  * IMG|PCL
  * PCL
  *
@@ -50,8 +47,6 @@ toProcMask(const std::string & mask_str)
       mask |= ros2_lidar::OS1_PROC_IMG;
     } else if (token == "PCL") {
       mask |= ros2_lidar::OS1_PROC_PCL;
-    } else if (token == "IMU") {
-      mask |= ros2_lidar::OS1_PROC_IMU;
     } else if (token == "SCAN") {
       mask |= ros2_lidar::OS1_PROC_SCAN;
     }
@@ -88,19 +83,8 @@ inline ros2_lidar::DataProcessorInterface * createPointcloudProcessor(
   return new OS1::PointcloudProcessor(node, mdata, frame, qos);
 }
 
-/**
- * @brief Factory method to get a pointer to a processor
- * to create the IMU interfaces
- * @return Raw pointer to a data processor interface to use
- */
-inline ros2_lidar::DataProcessorInterface * createIMUProcessor(
-  const rclcpp_lifecycle::LifecycleNode::SharedPtr node,
-  const ros2_lidar::Metadata & mdata,
-  const std::string & frame,
-  const rclcpp::QoS & qos)
-{
-  return new OS1::IMUProcessor(node, mdata, frame, qos);
-}
+
+
 
 /**
  * @brief Factory method to get a pointer to a processor
@@ -119,7 +103,6 @@ inline ros2_lidar::DataProcessorInterface * createScanProcessor(
 inline std::multimap<ClientState, DataProcessorInterface *> createProcessors(
   const rclcpp_lifecycle::LifecycleNode::SharedPtr node,
   const ros2_lidar::Metadata & mdata,
-  const std::string & imu_frame,
   const std::string & laser_frame,
   const rclcpp::QoS & qos,
   std::uint32_t mask = ros2_lidar::OS1_DEFAULT_PROC_MASK)
@@ -140,12 +123,6 @@ inline std::multimap<ClientState, DataProcessorInterface *> createProcessors(
           node, mdata, laser_frame, qos)));
   }
 
-  if ((mask & ros2_lidar::OS1_PROC_IMU) == ros2_lidar::OS1_PROC_IMU) {
-    data_processors.insert(
-      std::pair<ClientState, DataProcessorInterface *>(
-        ClientState::IMU_DATA, createIMUProcessor(
-          node, mdata, imu_frame, qos)));
-  }
 
   if ((mask & ros2_lidar::OS1_PROC_SCAN) == ros2_lidar::OS1_PROC_SCAN) {
     data_processors.insert(

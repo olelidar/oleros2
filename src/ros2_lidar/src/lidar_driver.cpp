@@ -24,38 +24,45 @@ lidarDriver::lidarDriver(
   const rclcpp::NodeOptions & options)
 : LifecycleInterface("lidarDriver", options), _sensor{std::move(sensor)}
 {
-  // added by zyl for clang warning
+
   _use_system_default_qos = false;
   _use_ros_time =false;
   _os1_proc_mask = 0;
 
-  // modified by zyl
-  this->declare_parameter("lidar_ip");
-  this->declare_parameter("computer_ip");
-  this->declare_parameter("imu_port",rclcpp::ParameterValue(9866));
-  this->declare_parameter("lidar_port",rclcpp::ParameterValue(2368));
-  this->declare_parameter("imu_to_sensor_transform");
-  this->declare_parameter("lidar_to_sensor_transform");
+  this->declare_parameter<std::string>("lidar_ip","192.168.1.100");
+  this->declare_parameter<std::string>("computer_ip","192.168.1.10");
+  this->declare_parameter<int>("lidar_port",(int)2368);
+  
+  std::vector<double> lidar_to_sensor_transform = {-1.0,0.0,0.0,0.0, 0.0,1.0,0.0,0.0, 0.0,0.0,-1.0,0.0, 0.0,0.0,0.0,1.0};
+  this->declare_parameter<std::vector<double>>("lidar_to_sensor_transform",lidar_to_sensor_transform);
 
 
-  this->declare_parameter("sensor_frame", rclcpp::ParameterValue(std::string("laser_sensor_frame")));
-  this->declare_parameter("laser_frame", rclcpp::ParameterValue(std::string("laser_data_frame")));
-  this->declare_parameter("imu_frame", rclcpp::ParameterValue(std::string("imu_data_frame")));
-  this->declare_parameter("use_system_default_qos", rclcpp::ParameterValue(false));
-  this->declare_parameter("timestamp_mode", rclcpp::ParameterValue(std::string("timestamp_mode")));
+  this->declare_parameter<std::string>("sensor_frame", "laser_sensor_frame");
+  this->declare_parameter<std::string>("laser_frame", "laser_data_frame");
+  this->declare_parameter<bool>("use_system_default_qos", true);
+  this->declare_parameter<std::string>("timestamp_mode", "timestamp_mode");
   // used to gen processor,
-  this->declare_parameter("os1_proc_mask", rclcpp::ParameterValue(std::string("PCL")));
+  this->declare_parameter<std::string>("os1_proc_mask", "SCAN");
+  std::cout << "out1.."<< std::endl;
+  
 
-  // added by zyl
-  this->declare_parameter("x_offset_array");
-  this->declare_parameter("y_offset_array");
-  this->declare_parameter("ah_offset_array");
-  this->declare_parameter("av_offset_array");
-  this->declare_parameter("laser_id_array");
-  this->declare_parameter("num_lasers");
-  this->declare_parameter("distance_resolution");
-  this->declare_parameter("ring_scan");
-  this->declare_parameter("lidar_vendor", rclcpp::ParameterValue(std::string("OLE_3D_V2")));
+  std::vector<double> x_offset_array = {0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0};
+  std::vector<double> y_offset_array = {0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0};
+  std::vector<double> ah_offset_array = {0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0};
+  std::vector<double> av_offset_array = {0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0};
+  std::vector<int64_t> laser_id_array = {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15};
+  this->declare_parameter<std::vector<double>>("x_offset_array" , x_offset_array);
+  this->declare_parameter<std::vector<double>>("y_offset_array" , y_offset_array);
+  this->declare_parameter<std::vector<double>>("ah_offset_array" , ah_offset_array);
+  this->declare_parameter<std::vector<double>>("av_offset_array" , av_offset_array);
+  this->declare_parameter<std::vector<int64_t>>("laser_id_array", laser_id_array);
+
+
+  this->declare_parameter<int>("num_lasers" , (int)1);
+  this->declare_parameter<double>("distance_resolution" , (double)0.001);
+  this->declare_parameter<int>("ring_scan" , (int)0);
+  this->declare_parameter<std::string>("lidar_vendor", "OLE_2D_V2");
+  std::cout << "out2.."<< std::endl;
 
 }
 
@@ -66,14 +73,13 @@ void lidarDriver::onConfigure()
   std::cout << "get_parameter start" << std::endl;
   ros2_lidar::Configuration lidar_config;
   try {
-    lidar_config.lidar_ip = get_parameter("lidar_ip").as_string();
     lidar_config.computer_ip = get_parameter("computer_ip").as_string();
   } catch (...) {
-    RCLCPP_FATAL( this->get_logger(), "Failed to get lidar or IMU IP address or hostname. An IP address for both are required!");
+    //RCLCPP_FATAL( this->get_logger(), "Failed to get lidar or IMU IP address or hostname. An IP address for both are required!");
     exit(-1);
   }
 
-  lidar_config.imu_port = get_parameter("imu_port").as_int();
+ 
   lidar_config.lidar_port = get_parameter("lidar_port").as_int();
   std::cout << "get_parameter tp1" << std::endl;
   // vendor
@@ -86,12 +92,10 @@ void lidarDriver::onConfigure()
   if(lidar_config.lidar_vendor == std::string("OLE_3D_V2")){
 	  std::cout << "get_parameter tp2" << std::endl;
 	  lidar_config.lidar_packet_size = 1206;
-	  lidar_config.imu_packet_size = 842;
   }
   else{
 	  std::cout << "get_parameter tp3" << std::endl;
-      lidar_config.lidar_packet_size = 1240;
-      lidar_config.imu_packet_size = 842;     //rsv
+      lidar_config.lidar_packet_size = 1240;    //rsv
   }
 
   //_sensor->reset(lidar_config);
@@ -111,7 +115,6 @@ void lidarDriver::onConfigure()
 
   _laser_sensor_frame = get_parameter("sensor_frame").as_string();
   _laser_data_frame = get_parameter("laser_frame").as_string();
-  _imu_data_frame = get_parameter("imu_frame").as_string();
 
   _use_system_default_qos = get_parameter("use_system_default_qos").as_bool();
   _os1_proc_mask = ros2_lidar::toProcMask(get_parameter("os1_proc_mask").as_string());
@@ -138,9 +141,7 @@ void lidarDriver::onConfigure()
 
   mdata.computer_ip = get_parameter("computer_ip").as_string();
   mdata.lidar_ip = get_parameter("lidar_ip").as_string();
-  mdata.imu_port = get_parameter("imu_port").as_int();
   mdata.lidar_port = get_parameter("lidar_port").as_int();
-  mdata.imu_to_sensor_transform = get_parameter("imu_to_sensor_transform").as_double_array();
   mdata.lidar_to_sensor_transform = get_parameter("lidar_to_sensor_transform").as_double_array();
 
   // for correct
@@ -157,11 +158,10 @@ void lidarDriver::onConfigure()
   mdata.lidar_vendor = get_parameter("lidar_vendor").as_string();
   if(mdata.lidar_vendor == std::string("OLE_3D_V2")){
 	  mdata.lidar_packet_size = 1206;
-	  mdata.imu_packet_size = 842;
   }
   else{
 	  mdata.lidar_packet_size = 1240;
-	  mdata.imu_packet_size = 842;     //rsv
+  //rsv
   }
 
   //ros2_lidar::Metadata mdata = _sensor->getMetadata();
@@ -171,11 +171,11 @@ void lidarDriver::onConfigure()
   if (_use_system_default_qos) {
     RCLCPP_INFO(this->get_logger(), "Using system defaults QoS for sensor data");
     _data_processors = ros2_lidar::createProcessors(
-      shared_from_this(), mdata, _imu_data_frame, _laser_data_frame,
+      shared_from_this(), mdata, _laser_data_frame,
       rclcpp::SystemDefaultsQoS(), _os1_proc_mask);
   } else {
     _data_processors = ros2_lidar::createProcessors(
-      shared_from_this(), mdata, _imu_data_frame, _laser_data_frame,
+      shared_from_this(), mdata, _laser_data_frame,
       rclcpp::SensorDataQoS(), _os1_proc_mask);
   }
 
@@ -284,7 +284,6 @@ void lidarDriver::resetService(
   ros2_lidar::Configuration lidar_config;
   lidar_config.lidar_ip = get_parameter("lidar_ip").as_string();
   lidar_config.computer_ip = get_parameter("computer_ip").as_string();
-  lidar_config.imu_port = get_parameter("imu_port").as_int();
   lidar_config.lidar_port = get_parameter("lidar_port").as_int();
   lidar_config.lidar_mode = get_parameter("lidar_mode").as_string();
   lidar_config.timestamp_mode = get_parameter("timestamp_mode").as_string();

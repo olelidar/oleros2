@@ -14,10 +14,9 @@
 #include "ros2_lidar/scan_os.hpp"
 
 #include "geometry_msgs/msg/transform_stamped.hpp"
-#include "sensor_msgs/msg/imu.hpp"
 #include "sensor_msgs/msg/laser_scan.hpp"
 #include "tf2/LinearMath/Transform.h"
-#include "tf2_geometry_msgs/tf2_geometry_msgs.h"
+#include "tf2_geometry_msgs/tf2_geometry_msgs.hpp"
 #include "lidar_msgs/msg/metadata.hpp"
 
 #include "ros2_lidar/OS1/OS1.hpp"
@@ -52,8 +51,6 @@ inline std::string toString(const ClientState & state)
       return std::string("error");
     case EXIT:
       return std::string("exit");
-    case IMU_DATA:
-      return std::string("imu data");
     case LIDAR_DATA:
       return std::string("lidar data");
     default:
@@ -69,7 +66,6 @@ inline lidar_msgs::msg::Metadata toMsg(const ros2_lidar::Metadata & mdata)
   lidar_msgs::msg::Metadata msg;
   msg.computer_ip = mdata.computer_ip;
   msg.lidar_ip = mdata.lidar_ip;
-  msg.imu_port = mdata.imu_port;
   msg.lidar_port = mdata.lidar_port;
   return msg;
 }
@@ -97,59 +93,6 @@ inline geometry_msgs::msg::TransformStamped toMsg(
   return msg;
 }
 
-/**
- * @brief Convert IMU to message format
- */
-inline sensor_msgs::msg::Imu toMsg(
-  const uint8_t * buf,
-  const std::string & frame,
-  uint64_t override_ts = 0)
-{
-  // rsv for later
-  const double standard_g = 9.80665;
-  sensor_msgs::msg::Imu m;
-  m.orientation.x = 0;
-  m.orientation.y = 0;
-  m.orientation.z = 0;
-  m.orientation.w = 1;
-  /*
-  m.header.stamp = override_ts == 0 ?
-    rclcpp::Time(OS1::imu_gyro_ts(buf)) : rclcpp::Time(override_ts);
-  m.header.frame_id = frame;
-
-  m.linear_acceleration.x = OS1::imu_la_x(buf) * standard_g;
-  m.linear_acceleration.y = OS1::imu_la_y(buf) * standard_g;
-  m.linear_acceleration.z = OS1::imu_la_z(buf) * standard_g;
-
-  m.angular_velocity.x = OS1::imu_av_x(buf) * M_PI / 180.0;
-  m.angular_velocity.y = OS1::imu_av_y(buf) * M_PI / 180.0;
-  m.angular_velocity.z = OS1::imu_av_z(buf) * M_PI / 180.0;
-  */
-  m.header.stamp = rclcpp::Time(0);
-  m.header.frame_id = frame;
-
-  m.linear_acceleration.x = 0;
-  m.linear_acceleration.y = 0;
-  m.linear_acceleration.z = 0;
-
-  m.angular_velocity.x = 0;
-  m.angular_velocity.y = 0;
-  m.angular_velocity.z = 0;
-
-
-
-  for (int i = 0; i < 9; i++) {
-    m.orientation_covariance[i] = -1;
-    m.angular_velocity_covariance[i] = 0;
-    m.linear_acceleration_covariance[i] = 0;
-  }
-  for (int i = 0; i < 9; i += 4) {
-    m.linear_acceleration_covariance[i] = 0.01;
-    m.angular_velocity_covariance[i] = 6e-4;
-  }
-
-  return m;
-}
 
 /**
  * @brief Convert Pointcloud to ROS message format

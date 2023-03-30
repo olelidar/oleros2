@@ -15,10 +15,10 @@ OS1Sensor::OS1Sensor()
 
   _lidar_vendor = std::string("OLE_3D_V2");
   _lidar_packet_size = 1206;
-  _imu_packet_size = 842;
+
 
   _lidar_packet.resize(_lidar_packet_size + 1);
-  _imu_packet.resize(_imu_packet_size + 1);
+
 
 
 }
@@ -27,7 +27,7 @@ OS1Sensor::~OS1Sensor()
 {
   _lidar_client.reset();
   _lidar_packet.clear();
-  _imu_packet.clear();
+
 }
 
 void OS1Sensor::reset(const ros2_lidar::Configuration & config)
@@ -40,12 +40,12 @@ void OS1Sensor::configure(const ros2_lidar::Configuration & config)
 {
   _lidar_vendor = 	config.lidar_vendor;
   _lidar_packet_size = 	(uint32_t)(config.lidar_packet_size);
-  _imu_packet_size = 	(uint32_t)(config.imu_packet_size);
+
 
   _lidar_packet.resize(_lidar_packet_size + 1);
-  _imu_packet.resize(_imu_packet_size + 1);
 
-  _lidar_client = OS1::init_client(config.lidar_port, config.imu_port);
+
+  _lidar_client = OS1::init_client(config.lidar_port);
 
   if (!_lidar_client) {
     throw ros2_lidar::lidarDriverException(
@@ -78,12 +78,6 @@ uint8_t * OS1Sensor::readPacket(const ros2_lidar::ClientState & state)
     case ros2_lidar::ClientState::LIDAR_DATA:
       if (read_lidar_packet(*_lidar_client, _lidar_packet.data(),_lidar_packet_size)) {
         return _lidar_packet.data();
-      } else {
-        return nullptr;
-      }
-    case ros2_lidar::ClientState::IMU_DATA:
-      if (read_imu_packet(*_lidar_client, _imu_packet.data(), _imu_packet_size)) {
-        return _imu_packet.data();
       } else {
         return nullptr;
       }

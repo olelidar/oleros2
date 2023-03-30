@@ -26,10 +26,8 @@ struct Metadata
 {
   std::string computer_ip;
   std::string lidar_ip;
-  int imu_port;
   int lidar_port;
 
-  std::vector<double> imu_to_sensor_transform;
   std::vector<double> lidar_to_sensor_transform;
 
   // added by zyl
@@ -43,7 +41,6 @@ struct Metadata
   int ring_scan;
   std::string lidar_vendor;
   int lidar_packet_size;
-  int imu_packet_size;
 };
 
 }  // namespace ros2_lidar

@@ -4,11 +4,9 @@ lidar_driver:
     lidar_ip: 192.168.1.100
     computer_ip: 192.168.1.10
     lidar_mode: "2048x16"
-    imu_port: 9866
     lidar_port: 2368
     sensor_frame: laser_sensor_frame
     laser_frame: laser_data_frame
-    imu_frame: imu_data_frame
 
     # if False, data are published with sensor data QoS. This is preferrable
     # for production but default QoS is needed for rosbag.
@@ -39,30 +37,25 @@ lidar_driver:
     # IMG   - Provides 8-bit image topics suitable for ML applications encoding
     #         the noise, range, intensity, and reflectivity data from a scan
     # PCL   - Provides a point cloud encoding of a LiDAR scan
-    # IMU   - Provides a data stream from the LiDARs integral IMU
     # SCAN  - Provides a synthesized 2D LaserScan from the 3D LiDAR data
     #
     # To construct a valid string for this parameter join the tokens from above
     # (in any combination) with the pipe character. For example, valid strings
     # include (but are not limited to):
     #
-    # IMG|PCL
-    # IMG|PCL|IMU|SCAN
+
     # PCL
     #
     
-    # os1_proc_mask: IMG|PCL|IMU|SCAN
+    # os1_proc_mask: IMG|PCL|SCAN
     os1_proc_mask: SCAN
-    # added by zyl for tranform
-    imu_to_sensor_transform:   [ 1.0,0.0,0.0,0.0, 0.0,1.0,0.0,0.0, 0.0,0.0, 1.0,0.0, 0.0,0.0,0.0,1.0]
     lidar_to_sensor_transform: [-1.0,0.0,0.0,0.0, 0.0,1.0,0.0,0.0, 0.0,0.0,-1.0,0.0, 0.0,0.0,0.0,1.0]
     
-    # added by zyl for correct
     x_offset_array: [0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0]
     y_offset_array: [0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0]
     ah_offset_array: [0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0]
     av_offset_array: [0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0]
-    laser_id_array: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+    #laser_id_array: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
     num_lasers: 1
     distance_resolution: 0.001
     ring_scan: 0

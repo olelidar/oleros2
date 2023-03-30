@@ -54,11 +54,9 @@ public:
 private:
   std::shared_ptr<client> _lidar_client;
   std::vector<uint8_t> _lidar_packet;
-  std::vector<uint8_t> _imu_packet;
   // modified by zyl
   std::string _lidar_vendor;
   uint32_t _lidar_packet_size;
-  uint32_t _imu_packet_size;
 
 };
 

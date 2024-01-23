@@ -1,12 +1,5 @@
 ## OLE Lidar Driver of Ros2 Foxy ## 
-## 1.快捷脚本 ##
-wget https://www.zhoujiale.cn/sh/runoleros2.sh
-chmod +x runoleros2.sh && ./runoleros2.sh
 在出现的rviz视图工具，点击add按钮，选择by topic 选项卡，选择 laserscan 并确定。
-
-
-
-
 ## 2.详细指导文档分解 ##
 #### 1.新建文件夹 ros2_ws
 ~$ mkdir ros2_ws
@@ -42,13 +35,13 @@ ros2_ws/src
 #### 7.执行3d ,参数见 param/ole3dv2.yaml
 
 ```
-~/ros2_ws$ ros2 launch ros2_ouster ole3dv2_launch.py
+~/ros2_ws$ ros2 launch ros2_lidar ole3dv2_launch.py
 ```
 
 #### 8.执行2d ,参数见 param/ole2dv2.yaml
 
 ```
-~/ros2_ws$ros2 launch ros2_ouster ole2dv2_launch.py
+~/ros2_ws$ros2 launch ros2_lidar ole2dv2_launch.py
 ```
 
 #### 9.新建终端启动ros2 环境配置 后执行rviz2

@@ -2,46 +2,51 @@
 在出现的rviz视图工具，点击add按钮，选择by topic 选项卡，选择 laserscan 并确定。
 ## 2.详细指导文档分解 ##
 #### 1.新建文件夹 ros2_ws
-~$ mkdir ros2_ws
+```
+mkdir ros2_ws
+```
 #### 2.将源码解压到 ros2_ws 下, ros2_ws
-~$ cd ros2_ws
-~/ros2_ws$ tar xvf oleros2.tar.xz
-
+```
+cd ros2_ws
+tar xvf oleros2.tar.xz
+```
 即，ros2_ws下出现src文件夹以及readme.md指导文档
 ros2_ws/src
 	readme.md
 #### 3.进入ros2_ws，安装依赖组件
-~/ros2_ws$sudo apt-get install -y ros-foxy-diagnostic-updater
-~/ros2_ws$sudo apt-get install -y python3-colcon-common-extensions
-~/ros2_ws$sudo apt-get install -y libpcap-dev
+```
+sudo apt-get install -y ros-foxy-diagnostic-updater
+sudo apt-get install -y python3-colcon-common-extensions
+sudo apt-get install -y libpcap-dev
+```
 #### 4.ros2 环境配置
 
 ```
-~/ros2_ws$ source /opt/ros/foxy/setup.bash
+source /opt/ros/foxy/setup.bash
 ```
 
 #### 5.执行编译
 
 ```
-~/ros2_ws$ colcon build
+colcon build
 ```
 
 #### 6.配置执行环境
 
 ```
-~/ros2_ws$. install/setup.bash
+. install/setup.bash
 ```
 
 #### 7.执行3d ,参数见 param/ole3dv2.yaml
 
 ```
-~/ros2_ws$ ros2 launch ros2_lidar ole3dv2_launch.py
+ros2 launch ros2_lidar ole3dv2_launch.py
 ```
 
 #### 8.执行2d ,参数见 param/ole2dv2.yaml
 
 ```
-~/ros2_ws$ros2 launch ros2_lidar ole2dv2_launch.py
+ros2 launch ros2_lidar ole2dv2_launch.py
 ```
 
 #### 9.新建终端启动ros2 环境配置 后执行rviz2
@@ -52,7 +57,9 @@ source /opt/ros/foxy/setup.bash
 rviz2 -f laser_data_frame
 ```
 ### 输出Topic
+```
 ros2 topic echo /scan
+```
 #### 10. 3d 时，rviz2 操作
 
 ##### add --> by topic --> pointcloud2

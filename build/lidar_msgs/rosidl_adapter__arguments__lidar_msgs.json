@@ -1,7 +1,0 @@
-{
-  "package_name": "lidar_msgs",
-  "non_idl_tuples": [
-    "/home/ole/oleros2/src/lidar_msgs:srv/GetMetadata.srv",
-    "/home/ole/oleros2/src/lidar_msgs:msg/Metadata.msg"
-  ]
-}

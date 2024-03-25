@@ -53,7 +53,7 @@ ros2 launch install/ros2_lidar/share/ros2_lidar/launch/ole2dv2_launch.py
 
 ```
 cd ros2_ws
-source /opt/ros/galactic/setup.bash
+source /opt/ros/humble/setup.bash
 rviz2 -f laser_data_frame
 ```
 ### 输出Topic
@@ -75,5 +75,3 @@ ros2 topic echo /scan
 #### 12.关于frame和tf2
 
  目前有3个， laser_data_frame 对应ros坐标系，sensor_data_frame 对应雷达系，旋转矩阵在yaml中，要校验，imu_data_frame 目前保留，
-
-#### 13.IDE,Eclipse IDE for C/C++ Developers 2019.12

@@ -1,0 +1,6 @@
+Invoking command in '/home/ole/oleros2/build/lidar_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ole/oleros2/src/lidar_msgs -DCMAKE_INSTALL_PREFIX=/home/ole/oleros2/install/lidar_msgs
+Invoked command in '/home/ole/oleros2/build/lidar_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ole/oleros2/src/lidar_msgs -DCMAKE_INSTALL_PREFIX=/home/ole/oleros2/install/lidar_msgs
+Invoking command in '/home/ole/oleros2/build/lidar_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ole/oleros2/build/lidar_msgs -- -j1 -l1
+Invoked command in '/home/ole/oleros2/build/lidar_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ole/oleros2/build/lidar_msgs -- -j1 -l1
+Invoking command in '/home/ole/oleros2/build/lidar_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ole/oleros2/build/lidar_msgs
+Invoked command in '/home/ole/oleros2/build/lidar_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ole/oleros2/build/lidar_msgs

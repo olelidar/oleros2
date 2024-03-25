@@ -1,0 +1,1353 @@
+[0.000000] (-) TimerEvent: {}
+[0.000194] (lidar_msgs) JobQueued: {'identifier': 'lidar_msgs', 'dependencies': OrderedDict()}
+[0.000236] (ros2_lidar) JobQueued: {'identifier': 'ros2_lidar', 'dependencies': OrderedDict([('lidar_msgs', '/home/ole/oleros2/install/lidar_msgs')])}
+[0.000272] (lidar_msgs) JobStarted: {'identifier': 'lidar_msgs'}
+[0.007278] (lidar_msgs) JobProgress: {'identifier': 'lidar_msgs', 'progress': 'cmake'}
+[0.007501] (lidar_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/ole/oleros2/src/lidar_msgs', '-DCMAKE_INSTALL_PREFIX=/home/ole/oleros2/install/lidar_msgs'], 'cwd': '/home/ole/oleros2/build/lidar_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'ole'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ole'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '10044'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=2a3f52659f538c8932eea2576600d4da'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ole'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ole'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ole-VirtualBox:@/tmp/.ICE-unix/10044,unix/ole-VirtualBox:/tmp/.ICE-unix/10044'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/98b7cfb5_a8b1_4626_907c_5c8d6009f750'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.I25QL2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.113'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ole/oleros2/build/lidar_msgs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=2a3f52659f538c8932eea2576600d4da'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.095743] (-) TimerEvent: {}
+[0.196080] (-) TimerEvent: {}
+[0.296453] (-) TimerEvent: {}
+[0.396902] (-) TimerEvent: {}
+[0.497309] (-) TimerEvent: {}
+[0.597685] (-) TimerEvent: {}
+[0.620838] (lidar_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.697768] (-) TimerEvent: {}
+[0.798168] (-) TimerEvent: {}
+[0.898425] (-) TimerEvent: {}
+[0.998806] (-) TimerEvent: {}
+[1.099865] (-) TimerEvent: {}
+[1.175253] (lidar_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[1.200155] (-) TimerEvent: {}
+[1.250011] (lidar_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.300330] (-) TimerEvent: {}
+[1.375892] (lidar_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.395232] (lidar_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.396812] (lidar_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.400339] (lidar_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.400580] (-) TimerEvent: {}
+[1.410208] (lidar_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.500741] (-) TimerEvent: {}
+[1.545090] (lidar_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.565353] (lidar_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.566146] (lidar_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.567259] (lidar_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.591016] (lidar_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.600871] (-) TimerEvent: {}
+[1.701258] (-) TimerEvent: {}
+[1.801730] (-) TimerEvent: {}
+[1.902498] (-) TimerEvent: {}
+[1.908704] (lidar_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[2.002645] (-) TimerEvent: {}
+[2.103019] (-) TimerEvent: {}
+[2.199301] (lidar_msgs) StdoutLine: {'line': b'-- Found builtin_interfaces: 1.2.1 (/opt/ros/humble/share/builtin_interfaces/cmake)\n'}
+[2.203185] (-) TimerEvent: {}
+[2.303566] (-) TimerEvent: {}
+[2.338290] (lidar_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[2.363647] (lidar_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[2.394714] (lidar_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[2.403690] (-) TimerEvent: {}
+[2.452261] (lidar_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.503768] (-) TimerEvent: {}
+[2.526747] (lidar_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.586916] (lidar_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[2.604208] (-) TimerEvent: {}
+[2.613667] (lidar_msgs) StdoutLine: {'line': b'-- Found std_msgs: 4.2.3 (/opt/ros/humble/share/std_msgs/cmake)\n'}
+[2.707786] (-) TimerEvent: {}
+[2.808182] (-) TimerEvent: {}
+[2.908541] (-) TimerEvent: {}
+[3.008950] (-) TimerEvent: {}
+[3.109395] (-) TimerEvent: {}
+[3.215741] (-) TimerEvent: {}
+[3.284140] (lidar_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[3.315809] (-) TimerEvent: {}
+[3.416498] (-) TimerEvent: {}
+[3.516889] (-) TimerEvent: {}
+[3.617312] (-) TimerEvent: {}
+[3.717769] (-) TimerEvent: {}
+[3.818156] (-) TimerEvent: {}
+[3.919145] (-) TimerEvent: {}
+[4.019661] (-) TimerEvent: {}
+[4.038383] (lidar_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.119776] (-) TimerEvent: {}
+[4.220184] (-) TimerEvent: {}
+[4.313816] (lidar_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.320460] (-) TimerEvent: {}
+[4.352052] (lidar_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[4.358060] (lidar_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[4.420529] (-) TimerEvent: {}
+[4.423630] (lidar_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[4.424244] (lidar_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[4.424427] (lidar_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[4.424591] (lidar_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[4.471022] (lidar_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[4.520709] (-) TimerEvent: {}
+[4.598654] (lidar_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[4.621489] (-) TimerEvent: {}
+[4.670625] (lidar_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[4.675149] (lidar_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/ole/oleros2/build/lidar_msgs\n'}
+[4.695065] (lidar_msgs) CommandEnded: {'returncode': 0}
+[4.695604] (lidar_msgs) JobProgress: {'identifier': 'lidar_msgs', 'progress': 'build'}
+[4.695643] (lidar_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ole/oleros2/build/lidar_msgs', '--', '-j1', '-l1'], 'cwd': '/home/ole/oleros2/build/lidar_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'ole'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ole'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '10044'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=2a3f52659f538c8932eea2576600d4da'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ole'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ole'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ole-VirtualBox:@/tmp/.ICE-unix/10044,unix/ole-VirtualBox:/tmp/.ICE-unix/10044'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/98b7cfb5_a8b1_4626_907c_5c8d6009f750'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.I25QL2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.113'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ole/oleros2/build/lidar_msgs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=2a3f52659f538c8932eea2576600d4da'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[4.721646] (-) TimerEvent: {}
+[4.767986] (lidar_msgs) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[4.821772] (-) TimerEvent: {}
+[4.922181] (-) TimerEvent: {}
+[5.022596] (-) TimerEvent: {}
+[5.122991] (-) TimerEvent: {}
+[5.223379] (-) TimerEvent: {}
+[5.323727] (-) TimerEvent: {}
+[5.424354] (-) TimerEvent: {}
+[5.524900] (-) TimerEvent: {}
+[5.562739] (lidar_msgs) StdoutLine: {'line': b'[  2%] Built target lidar_msgs__cpp\n'}
+[5.574664] (lidar_msgs) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[5.625045] (-) TimerEvent: {}
+[5.725508] (-) TimerEvent: {}
+[5.825904] (-) TimerEvent: {}
+[5.926277] (-) TimerEvent: {}
+[6.026865] (-) TimerEvent: {}
+[6.127371] (-) TimerEvent: {}
+[6.140345] (lidar_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding CXX object CMakeFiles/lidar_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/lidar_msgs/srv/get_metadata__type_support.cpp.o\x1b[0m\n'}
+[6.227548] (-) TimerEvent: {}
+[6.328706] (-) TimerEvent: {}
+[6.429128] (-) TimerEvent: {}
+[6.529658] (-) TimerEvent: {}
+[6.630430] (-) TimerEvent: {}
+[6.731072] (-) TimerEvent: {}
+[6.831602] (-) TimerEvent: {}
+[6.931961] (-) TimerEvent: {}
+[7.032535] (-) TimerEvent: {}
+[7.132873] (-) TimerEvent: {}
+[7.233353] (-) TimerEvent: {}
+[7.333676] (-) TimerEvent: {}
+[7.434086] (-) TimerEvent: {}
+[7.534489] (-) TimerEvent: {}
+[7.634884] (-) TimerEvent: {}
+[7.715334] (lidar_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding CXX object CMakeFiles/lidar_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/lidar_msgs/msg/metadata__type_support.cpp.o\x1b[0m\n'}
+[7.735034] (-) TimerEvent: {}
+[7.835454] (-) TimerEvent: {}
+[7.936632] (-) TimerEvent: {}
+[8.037051] (-) TimerEvent: {}
+[8.114024] (lidar_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32m\x1b[1mLinking CXX shared library liblidar_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[8.137194] (-) TimerEvent: {}
+[8.217689] (lidar_msgs) StdoutLine: {'line': b'[ 12%] Built target lidar_msgs__rosidl_typesupport_cpp\n'}
+[8.228080] (lidar_msgs) StdoutLine: {'line': b'[ 15%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[8.237342] (-) TimerEvent: {}
+[8.337733] (-) TimerEvent: {}
+[8.438130] (-) TimerEvent: {}
+[8.538511] (-) TimerEvent: {}
+[8.638905] (-) TimerEvent: {}
+[8.739286] (-) TimerEvent: {}
+[8.839663] (-) TimerEvent: {}
+[8.940117] (-) TimerEvent: {}
+[8.996218] (lidar_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/lidar_msgs__rosidl_generator_c.dir/rosidl_generator_c/lidar_msgs/srv/detail/get_metadata__functions.c.o\x1b[0m\n'}
+[9.040261] (-) TimerEvent: {}
+[9.092711] (lidar_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding C object CMakeFiles/lidar_msgs__rosidl_generator_c.dir/rosidl_generator_c/lidar_msgs/msg/detail/metadata__functions.c.o\x1b[0m\n'}
+[9.140416] (-) TimerEvent: {}
+[9.155561] (lidar_msgs) StdoutLine: {'line': b'[ 23%] \x1b[32m\x1b[1mLinking C shared library liblidar_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[9.236771] (lidar_msgs) StdoutLine: {'line': b'[ 23%] Built target lidar_msgs__rosidl_generator_c\n'}
+[9.240555] (-) TimerEvent: {}
+[9.247295] (lidar_msgs) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[9.340698] (-) TimerEvent: {}
+[9.441140] (-) TimerEvent: {}
+[9.541555] (-) TimerEvent: {}
+[9.641939] (-) TimerEvent: {}
+[9.742465] (-) TimerEvent: {}
+[9.845026] (-) TimerEvent: {}
+[9.931278] (lidar_msgs) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/lidar_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lidar_msgs/srv/detail/get_metadata__type_support_c.cpp.o\x1b[0m\n'}
+[9.945172] (-) TimerEvent: {}
+[10.046179] (-) TimerEvent: {}
+[10.146603] (-) TimerEvent: {}
+[10.250968] (-) TimerEvent: {}
+[10.351422] (-) TimerEvent: {}
+[10.452149] (-) TimerEvent: {}
+[10.552743] (-) TimerEvent: {}
+[10.608668] (lidar_msgs) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/lidar_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lidar_msgs/msg/detail/metadata__type_support_c.cpp.o\x1b[0m\n'}
+[10.652876] (-) TimerEvent: {}
+[10.753342] (-) TimerEvent: {}
+[10.853754] (-) TimerEvent: {}
+[10.954203] (-) TimerEvent: {}
+[11.054643] (-) TimerEvent: {}
+[11.155088] (-) TimerEvent: {}
+[11.170192] (lidar_msgs) StdoutLine: {'line': b'[ 33%] \x1b[32m\x1b[1mLinking CXX shared library liblidar_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[11.255235] (-) TimerEvent: {}
+[11.292020] (lidar_msgs) StdoutLine: {'line': b'[ 33%] Built target lidar_msgs__rosidl_typesupport_fastrtps_c\n'}
+[11.309734] (lidar_msgs) StdoutLine: {'line': b'[ 35%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[11.355397] (-) TimerEvent: {}
+[11.455885] (-) TimerEvent: {}
+[11.556375] (-) TimerEvent: {}
+[11.656773] (-) TimerEvent: {}
+[11.757177] (-) TimerEvent: {}
+[11.857620] (-) TimerEvent: {}
+[11.987279] (-) TimerEvent: {}
+[12.066414] (lidar_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/lidar_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/lidar_msgs/srv/detail/dds_fastrtps/get_metadata__type_support.cpp.o\x1b[0m\n'}
+[12.087536] (-) TimerEvent: {}
+[12.188070] (-) TimerEvent: {}
+[12.288511] (-) TimerEvent: {}
+[12.388881] (-) TimerEvent: {}
+[12.491835] (-) TimerEvent: {}
+[12.592222] (-) TimerEvent: {}
+[12.692611] (-) TimerEvent: {}
+[12.793511] (-) TimerEvent: {}
+[12.818344] (lidar_msgs) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/lidar_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/lidar_msgs/msg/detail/dds_fastrtps/metadata__type_support.cpp.o\x1b[0m\n'}
+[12.893673] (-) TimerEvent: {}
+[12.994176] (-) TimerEvent: {}
+[13.099384] (-) TimerEvent: {}
+[13.200727] (-) TimerEvent: {}
+[13.301282] (-) TimerEvent: {}
+[13.401713] (-) TimerEvent: {}
+[13.462972] (lidar_msgs) StdoutLine: {'line': b'[ 43%] \x1b[32m\x1b[1mLinking CXX shared library liblidar_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[13.501855] (-) TimerEvent: {}
+[13.572911] (lidar_msgs) StdoutLine: {'line': b'[ 43%] Built target lidar_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[13.583198] (lidar_msgs) StdoutLine: {'line': b'[ 46%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[13.602000] (-) TimerEvent: {}
+[13.702631] (-) TimerEvent: {}
+[13.803251] (-) TimerEvent: {}
+[13.903649] (-) TimerEvent: {}
+[14.004089] (-) TimerEvent: {}
+[14.104601] (-) TimerEvent: {}
+[14.205084] (-) TimerEvent: {}
+[14.248527] (lidar_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding C object CMakeFiles/lidar_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/lidar_msgs/srv/detail/get_metadata__type_support.c.o\x1b[0m\n'}
+[14.309250] (-) TimerEvent: {}
+[14.316681] (lidar_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding C object CMakeFiles/lidar_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/lidar_msgs/msg/detail/metadata__type_support.c.o\x1b[0m\n'}
+[14.376066] (lidar_msgs) StdoutLine: {'line': b'[ 53%] \x1b[32m\x1b[1mLinking C shared library liblidar_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[14.409402] (-) TimerEvent: {}
+[14.417163] (lidar_msgs) StdoutLine: {'line': b'[ 53%] Built target lidar_msgs__rosidl_typesupport_introspection_c\n'}
+[14.428389] (lidar_msgs) StdoutLine: {'line': b'[ 56%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[14.509545] (-) TimerEvent: {}
+[14.609934] (-) TimerEvent: {}
+[14.710325] (-) TimerEvent: {}
+[14.810768] (-) TimerEvent: {}
+[14.911878] (-) TimerEvent: {}
+[15.012246] (-) TimerEvent: {}
+[15.026538] (lidar_msgs) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/lidar_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/lidar_msgs/srv/get_metadata__type_support.cpp.o\x1b[0m\n'}
+[15.078582] (lidar_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/lidar_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/lidar_msgs/msg/metadata__type_support.cpp.o\x1b[0m\n'}
+[15.112397] (-) TimerEvent: {}
+[15.115603] (lidar_msgs) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking CXX shared library liblidar_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[15.181764] (lidar_msgs) StdoutLine: {'line': b'[ 64%] Built target lidar_msgs__rosidl_typesupport_c\n'}
+[15.192714] (lidar_msgs) StdoutLine: {'line': b'[ 66%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[15.212706] (-) TimerEvent: {}
+[15.313312] (-) TimerEvent: {}
+[15.413690] (-) TimerEvent: {}
+[15.514442] (-) TimerEvent: {}
+[15.614785] (-) TimerEvent: {}
+[15.715228] (-) TimerEvent: {}
+[15.815601] (-) TimerEvent: {}
+[15.848110] (lidar_msgs) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/lidar_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/lidar_msgs/srv/detail/get_metadata__type_support.cpp.o\x1b[0m\n'}
+[15.915909] (-) TimerEvent: {}
+[16.016316] (-) TimerEvent: {}
+[16.116723] (-) TimerEvent: {}
+[16.217125] (-) TimerEvent: {}
+[16.317540] (-) TimerEvent: {}
+[16.418471] (-) TimerEvent: {}
+[16.518895] (-) TimerEvent: {}
+[16.561195] (lidar_msgs) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/lidar_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/lidar_msgs/msg/detail/metadata__type_support.cpp.o\x1b[0m\n'}
+[16.619054] (-) TimerEvent: {}
+[16.719470] (-) TimerEvent: {}
+[16.820826] (-) TimerEvent: {}
+[16.921282] (-) TimerEvent: {}
+[17.021823] (-) TimerEvent: {}
+[17.122296] (-) TimerEvent: {}
+[17.169109] (lidar_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking CXX shared library liblidar_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[17.222441] (-) TimerEvent: {}
+[17.266142] (lidar_msgs) StdoutLine: {'line': b'[ 74%] Built target lidar_msgs__rosidl_typesupport_introspection_cpp\n'}
+[17.285971] (lidar_msgs) StdoutLine: {'line': b'[ 74%] Built target lidar_msgs\n'}
+[17.322568] (-) TimerEvent: {}
+[17.323361] (lidar_msgs) StdoutLine: {'line': b'[ 74%] Built target ament_cmake_python_copy_lidar_msgs\n'}
+[17.422721] (-) TimerEvent: {}
+[17.523033] (-) TimerEvent: {}
+[17.623413] (-) TimerEvent: {}
+[17.724116] (-) TimerEvent: {}
+[17.770035] (lidar_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[17.771421] (lidar_msgs) StdoutLine: {'line': b'creating lidar_msgs.egg-info\n'}
+[17.771983] (lidar_msgs) StdoutLine: {'line': b'writing lidar_msgs.egg-info/PKG-INFO\n'}
+[17.772387] (lidar_msgs) StdoutLine: {'line': b'writing dependency_links to lidar_msgs.egg-info/dependency_links.txt\n'}
+[17.772768] (lidar_msgs) StdoutLine: {'line': b'writing top-level names to lidar_msgs.egg-info/top_level.txt\n'}
+[17.773275] (lidar_msgs) StdoutLine: {'line': b"writing manifest file 'lidar_msgs.egg-info/SOURCES.txt'\n"}
+[17.778830] (lidar_msgs) StdoutLine: {'line': b"reading manifest file 'lidar_msgs.egg-info/SOURCES.txt'\n"}
+[17.779930] (lidar_msgs) StdoutLine: {'line': b"writing manifest file 'lidar_msgs.egg-info/SOURCES.txt'\n"}
+[17.810772] (lidar_msgs) StdoutLine: {'line': b'[ 74%] Built target ament_cmake_python_build_lidar_msgs_egg\n'}
+[17.824540] (-) TimerEvent: {}
+[17.832016] (lidar_msgs) StdoutLine: {'line': b'[ 76%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[17.924886] (-) TimerEvent: {}
+[18.025320] (-) TimerEvent: {}
+[18.125732] (-) TimerEvent: {}
+[18.226138] (-) TimerEvent: {}
+[18.326638] (-) TimerEvent: {}
+[18.427045] (-) TimerEvent: {}
+[18.530353] (-) TimerEvent: {}
+[18.630830] (-) TimerEvent: {}
+[18.731201] (-) TimerEvent: {}
+[18.831644] (-) TimerEvent: {}
+[18.932673] (-) TimerEvent: {}
+[19.012966] (lidar_msgs) StdoutLine: {'line': b'[ 76%] Built target lidar_msgs__py\n'}
+[19.034267] (-) TimerEvent: {}
+[19.044062] (lidar_msgs) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding C object CMakeFiles/lidar_msgs__rosidl_generator_py.dir/rosidl_generator_py/lidar_msgs/srv/_get_metadata_s.c.o\x1b[0m\n'}
+[19.134328] (-) TimerEvent: {}
+[19.234639] (-) TimerEvent: {}
+[19.335160] (-) TimerEvent: {}
+[19.435593] (-) TimerEvent: {}
+[19.455528] (lidar_msgs) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/lidar_msgs__rosidl_generator_py.dir/rosidl_generator_py/lidar_msgs/msg/_metadata_s.c.o\x1b[0m\n'}
+[19.535810] (-) TimerEvent: {}
+[19.633165] (lidar_msgs) StdoutLine: {'line': b'[ 84%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/lidar_msgs/liblidar_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[19.636065] (-) TimerEvent: {}
+[19.717191] (lidar_msgs) StdoutLine: {'line': b'[ 84%] Built target lidar_msgs__rosidl_generator_py\n'}
+[19.736214] (-) TimerEvent: {}
+[19.738072] (lidar_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/lidar_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/lidar_msgs/_lidar_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[19.836514] (-) TimerEvent: {}
+[19.908212] (lidar_msgs) StdoutLine: {'line': b'[ 89%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/lidar_msgs/lidar_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[19.936680] (-) TimerEvent: {}
+[19.957173] (lidar_msgs) StdoutLine: {'line': b'[ 89%] Built target lidar_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[19.988445] (lidar_msgs) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/lidar_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/lidar_msgs/_lidar_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[20.036829] (-) TimerEvent: {}
+[20.137249] (-) TimerEvent: {}
+[20.159406] (lidar_msgs) StdoutLine: {'line': b'[ 94%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/lidar_msgs/lidar_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[20.218965] (lidar_msgs) StdoutLine: {'line': b'[ 94%] Built target lidar_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[20.237902] (-) TimerEvent: {}
+[20.240231] (lidar_msgs) StdoutLine: {'line': b'[ 97%] \x1b[32mBuilding C object CMakeFiles/lidar_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/lidar_msgs/_lidar_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[20.338059] (-) TimerEvent: {}
+[20.419573] (lidar_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/lidar_msgs/lidar_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[20.438209] (-) TimerEvent: {}
+[20.477903] (lidar_msgs) StdoutLine: {'line': b'[100%] Built target lidar_msgs__rosidl_typesupport_c__pyext\n'}
+[20.490705] (lidar_msgs) CommandEnded: {'returncode': 0}
+[20.538388] (-) TimerEvent: {}
+[20.583587] (lidar_msgs) JobProgress: {'identifier': 'lidar_msgs', 'progress': 'install'}
+[20.593182] (lidar_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ole/oleros2/build/lidar_msgs'], 'cwd': '/home/ole/oleros2/build/lidar_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'ole'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ole'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '10044'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=2a3f52659f538c8932eea2576600d4da'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ole'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ole'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ole-VirtualBox:@/tmp/.ICE-unix/10044,unix/ole-VirtualBox:/tmp/.ICE-unix/10044'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/98b7cfb5_a8b1_4626_907c_5c8d6009f750'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.I25QL2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.113'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ole/oleros2/build/lidar_msgs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=2a3f52659f538c8932eea2576600d4da'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[20.610201] (lidar_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[20.610696] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/share/ament_index/resource_index/rosidl_interfaces/lidar_msgs\n'}
+[20.611187] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/include/lidar_msgs/lidar_msgs\n'}
+[20.611473] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/include/lidar_msgs/lidar_msgs/msg\n'}
+[20.611706] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/include/lidar_msgs/lidar_msgs/msg/detail\n'}
+[20.612060] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/include/lidar_msgs/lidar_msgs/msg/detail/metadata__functions.h\n'}
+[20.612359] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/include/lidar_msgs/lidar_msgs/msg/detail/metadata__functions.c\n'}
+[20.612642] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/include/lidar_msgs/lidar_msgs/msg/detail/metadata__type_support.h\n'}
+[20.613441] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/include/lidar_msgs/lidar_msgs/msg/detail/metadata__struct.h\n'}
+[20.613819] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/include/lidar_msgs/lidar_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[20.614130] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/include/lidar_msgs/lidar_msgs/msg/metadata.h\n'}
+[20.614444] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/include/lidar_msgs/lidar_msgs/srv\n'}
+[20.615058] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/include/lidar_msgs/lidar_msgs/srv/detail\n'}
+[20.615354] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/include/lidar_msgs/lidar_msgs/srv/detail/get_metadata__functions.h\n'}
+[20.615807] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/include/lidar_msgs/lidar_msgs/srv/detail/get_metadata__functions.c\n'}
+[20.616112] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/include/lidar_msgs/lidar_msgs/srv/detail/get_metadata__type_support.h\n'}
+[20.616389] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/include/lidar_msgs/lidar_msgs/srv/detail/get_metadata__struct.h\n'}
+[20.616734] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/include/lidar_msgs/lidar_msgs/srv/get_metadata.h\n'}
+[20.617420] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/share/lidar_msgs/environment/library_path.sh\n'}
+[20.617897] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/share/lidar_msgs/environment/library_path.dsv\n'}
+[20.618306] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/lib/liblidar_msgs__rosidl_generator_c.so\n'}
+[20.619009] (lidar_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/ole/oleros2/install/lidar_msgs/lib/liblidar_msgs__rosidl_generator_c.so" to ""\n'}
+[20.623623] (lidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ole/oleros2/install/lidar_msgs/include/lidar_msgs/lidar_msgs\n'}
+[20.623866] (lidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ole/oleros2/install/lidar_msgs/include/lidar_msgs/lidar_msgs/msg\n'}
+[20.624077] (lidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ole/oleros2/install/lidar_msgs/include/lidar_msgs/lidar_msgs/msg/detail\n'}
+[20.624292] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/include/lidar_msgs/lidar_msgs/msg/detail/metadata__rosidl_typesupport_fastrtps_c.h\n'}
+[20.624664] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/include/lidar_msgs/lidar_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[20.625232] (lidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ole/oleros2/install/lidar_msgs/include/lidar_msgs/lidar_msgs/srv\n'}
+[20.625866] (lidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ole/oleros2/install/lidar_msgs/include/lidar_msgs/lidar_msgs/srv/detail\n'}
+[20.626098] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/include/lidar_msgs/lidar_msgs/srv/detail/get_metadata__rosidl_typesupport_fastrtps_c.h\n'}
+[20.626552] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/lib/liblidar_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[20.627246] (lidar_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/ole/oleros2/install/lidar_msgs/lib/liblidar_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[20.627702] (lidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ole/oleros2/install/lidar_msgs/include/lidar_msgs/lidar_msgs\n'}
+[20.627916] (lidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ole/oleros2/install/lidar_msgs/include/lidar_msgs/lidar_msgs/msg\n'}
+[20.628215] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/include/lidar_msgs/lidar_msgs/msg/metadata.hpp\n'}
+[20.628564] (lidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ole/oleros2/install/lidar_msgs/include/lidar_msgs/lidar_msgs/msg/detail\n'}
+[20.628782] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/include/lidar_msgs/lidar_msgs/msg/detail/metadata__traits.hpp\n'}
+[20.629069] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/include/lidar_msgs/lidar_msgs/msg/detail/metadata__builder.hpp\n'}
+[20.629343] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/include/lidar_msgs/lidar_msgs/msg/detail/metadata__struct.hpp\n'}
+[20.629857] (lidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ole/oleros2/install/lidar_msgs/include/lidar_msgs/lidar_msgs/srv\n'}
+[20.630077] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/include/lidar_msgs/lidar_msgs/srv/get_metadata.hpp\n'}
+[20.630413] (lidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ole/oleros2/install/lidar_msgs/include/lidar_msgs/lidar_msgs/srv/detail\n'}
+[20.630631] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/include/lidar_msgs/lidar_msgs/srv/detail/get_metadata__struct.hpp\n'}
+[20.631017] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/include/lidar_msgs/lidar_msgs/srv/detail/get_metadata__builder.hpp\n'}
+[20.631345] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/include/lidar_msgs/lidar_msgs/srv/detail/get_metadata__traits.hpp\n'}
+[20.632165] (lidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ole/oleros2/install/lidar_msgs/include/lidar_msgs/lidar_msgs\n'}
+[20.632471] (lidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ole/oleros2/install/lidar_msgs/include/lidar_msgs/lidar_msgs/msg\n'}
+[20.632752] (lidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ole/oleros2/install/lidar_msgs/include/lidar_msgs/lidar_msgs/msg/detail\n'}
+[20.633110] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/include/lidar_msgs/lidar_msgs/msg/detail/dds_fastrtps\n'}
+[20.633492] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/include/lidar_msgs/lidar_msgs/msg/detail/metadata__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[20.633812] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/include/lidar_msgs/lidar_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[20.634093] (lidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ole/oleros2/install/lidar_msgs/include/lidar_msgs/lidar_msgs/srv\n'}
+[20.634381] (lidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ole/oleros2/install/lidar_msgs/include/lidar_msgs/lidar_msgs/srv/detail\n'}
+[20.634598] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/include/lidar_msgs/lidar_msgs/srv/detail/dds_fastrtps\n'}
+[20.634852] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/include/lidar_msgs/lidar_msgs/srv/detail/get_metadata__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[20.635358] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/lib/liblidar_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[20.635994] (lidar_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/ole/oleros2/install/lidar_msgs/lib/liblidar_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[20.636561] (lidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ole/oleros2/install/lidar_msgs/include/lidar_msgs/lidar_msgs\n'}
+[20.636799] (lidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ole/oleros2/install/lidar_msgs/include/lidar_msgs/lidar_msgs/msg\n'}
+[20.637010] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/include/lidar_msgs/lidar_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[20.637353] (lidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ole/oleros2/install/lidar_msgs/include/lidar_msgs/lidar_msgs/msg/detail\n'}
+[20.637721] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/include/lidar_msgs/lidar_msgs/msg/detail/metadata__rosidl_typesupport_introspection_c.h\n'}
+[20.638206] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/include/lidar_msgs/lidar_msgs/msg/detail/metadata__type_support.c\n'}
+[20.638535] (lidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ole/oleros2/install/lidar_msgs/include/lidar_msgs/lidar_msgs/srv\n'}
+[20.638651] (-) TimerEvent: {}
+[20.638923] (lidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ole/oleros2/install/lidar_msgs/include/lidar_msgs/lidar_msgs/srv/detail\n'}
+[20.639157] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/include/lidar_msgs/lidar_msgs/srv/detail/get_metadata__type_support.c\n'}
+[20.639468] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/include/lidar_msgs/lidar_msgs/srv/detail/get_metadata__rosidl_typesupport_introspection_c.h\n'}
+[20.639862] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/lib/liblidar_msgs__rosidl_typesupport_introspection_c.so\n'}
+[20.640513] (lidar_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/ole/oleros2/install/lidar_msgs/lib/liblidar_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[20.640797] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/lib/liblidar_msgs__rosidl_typesupport_c.so\n'}
+[20.641363] (lidar_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/ole/oleros2/install/lidar_msgs/lib/liblidar_msgs__rosidl_typesupport_c.so" to ""\n'}
+[20.641619] (lidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ole/oleros2/install/lidar_msgs/include/lidar_msgs/lidar_msgs\n'}
+[20.641821] (lidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ole/oleros2/install/lidar_msgs/include/lidar_msgs/lidar_msgs/msg\n'}
+[20.642015] (lidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ole/oleros2/install/lidar_msgs/include/lidar_msgs/lidar_msgs/msg/detail\n'}
+[20.642248] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/include/lidar_msgs/lidar_msgs/msg/detail/metadata__rosidl_typesupport_introspection_cpp.hpp\n'}
+[20.642543] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/include/lidar_msgs/lidar_msgs/msg/detail/metadata__type_support.cpp\n'}
+[20.642818] (lidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ole/oleros2/install/lidar_msgs/include/lidar_msgs/lidar_msgs/srv\n'}
+[20.643052] (lidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ole/oleros2/install/lidar_msgs/include/lidar_msgs/lidar_msgs/srv/detail\n'}
+[20.643269] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/include/lidar_msgs/lidar_msgs/srv/detail/get_metadata__type_support.cpp\n'}
+[20.643600] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/include/lidar_msgs/lidar_msgs/srv/detail/get_metadata__rosidl_typesupport_introspection_cpp.hpp\n'}
+[20.643966] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/lib/liblidar_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[20.644632] (lidar_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/ole/oleros2/install/lidar_msgs/lib/liblidar_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[20.644913] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/lib/liblidar_msgs__rosidl_typesupport_cpp.so\n'}
+[20.645501] (lidar_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/ole/oleros2/install/lidar_msgs/lib/liblidar_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[20.645754] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/share/lidar_msgs/environment/pythonpath.sh\n'}
+[20.646097] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/share/lidar_msgs/environment/pythonpath.dsv\n'}
+[20.646448] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/local/lib/python3.10/dist-packages/lidar_msgs-0.2.0-py3.10.egg-info\n'}
+[20.646753] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/local/lib/python3.10/dist-packages/lidar_msgs-0.2.0-py3.10.egg-info/dependency_links.txt\n'}
+[20.647047] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/local/lib/python3.10/dist-packages/lidar_msgs-0.2.0-py3.10.egg-info/SOURCES.txt\n'}
+[20.647317] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/local/lib/python3.10/dist-packages/lidar_msgs-0.2.0-py3.10.egg-info/top_level.txt\n'}
+[20.647620] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/local/lib/python3.10/dist-packages/lidar_msgs-0.2.0-py3.10.egg-info/PKG-INFO\n'}
+[20.648076] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/local/lib/python3.10/dist-packages/lidar_msgs\n'}
+[20.648356] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/local/lib/python3.10/dist-packages/lidar_msgs/_lidar_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[20.648705] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/local/lib/python3.10/dist-packages/lidar_msgs/lidar_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[20.649684] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/local/lib/python3.10/dist-packages/lidar_msgs/lidar_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[20.650012] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/local/lib/python3.10/dist-packages/lidar_msgs/_lidar_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[20.650306] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/local/lib/python3.10/dist-packages/lidar_msgs/msg\n'}
+[20.650544] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/local/lib/python3.10/dist-packages/lidar_msgs/msg/_metadata_s.c\n'}
+[20.650817] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/local/lib/python3.10/dist-packages/lidar_msgs/msg/_metadata.py\n'}
+[20.651124] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/local/lib/python3.10/dist-packages/lidar_msgs/msg/__init__.py\n'}
+[20.651389] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/local/lib/python3.10/dist-packages/lidar_msgs/liblidar_msgs__rosidl_generator_py.so\n'}
+[20.651761] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/local/lib/python3.10/dist-packages/lidar_msgs/__init__.py\n'}
+[20.652050] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/local/lib/python3.10/dist-packages/lidar_msgs/_lidar_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[20.652326] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/local/lib/python3.10/dist-packages/lidar_msgs/srv\n'}
+[20.652560] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/local/lib/python3.10/dist-packages/lidar_msgs/srv/__init__.py\n'}
+[20.652845] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/local/lib/python3.10/dist-packages/lidar_msgs/srv/_get_metadata.py\n'}
+[20.653126] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/local/lib/python3.10/dist-packages/lidar_msgs/srv/_get_metadata_s.c\n'}
+[20.653402] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/local/lib/python3.10/dist-packages/lidar_msgs/lidar_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[20.713595] (lidar_msgs) StdoutLine: {'line': b"Listing '/home/ole/oleros2/install/lidar_msgs/local/lib/python3.10/dist-packages/lidar_msgs'...\n"}
+[20.713954] (lidar_msgs) StdoutLine: {'line': b"Compiling '/home/ole/oleros2/install/lidar_msgs/local/lib/python3.10/dist-packages/lidar_msgs/__init__.py'...\n"}
+[20.714164] (lidar_msgs) StdoutLine: {'line': b"Listing '/home/ole/oleros2/install/lidar_msgs/local/lib/python3.10/dist-packages/lidar_msgs/msg'...\n"}
+[20.714305] (lidar_msgs) StdoutLine: {'line': b"Compiling '/home/ole/oleros2/install/lidar_msgs/local/lib/python3.10/dist-packages/lidar_msgs/msg/__init__.py'...\n"}
+[20.714407] (lidar_msgs) StdoutLine: {'line': b"Compiling '/home/ole/oleros2/install/lidar_msgs/local/lib/python3.10/dist-packages/lidar_msgs/msg/_metadata.py'...\n"}
+[20.714526] (lidar_msgs) StdoutLine: {'line': b"Listing '/home/ole/oleros2/install/lidar_msgs/local/lib/python3.10/dist-packages/lidar_msgs/srv'...\n"}
+[20.714689] (lidar_msgs) StdoutLine: {'line': b"Compiling '/home/ole/oleros2/install/lidar_msgs/local/lib/python3.10/dist-packages/lidar_msgs/srv/__init__.py'...\n"}
+[20.714845] (lidar_msgs) StdoutLine: {'line': b"Compiling '/home/ole/oleros2/install/lidar_msgs/local/lib/python3.10/dist-packages/lidar_msgs/srv/_get_metadata.py'...\n"}
+[20.721533] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/local/lib/python3.10/dist-packages/lidar_msgs/lidar_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[20.722231] (lidar_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/ole/oleros2/install/lidar_msgs/local/lib/python3.10/dist-packages/lidar_msgs/lidar_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[20.722700] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/local/lib/python3.10/dist-packages/lidar_msgs/lidar_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[20.723284] (lidar_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/ole/oleros2/install/lidar_msgs/local/lib/python3.10/dist-packages/lidar_msgs/lidar_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[20.723783] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/local/lib/python3.10/dist-packages/lidar_msgs/lidar_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[20.724373] (lidar_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/ole/oleros2/install/lidar_msgs/local/lib/python3.10/dist-packages/lidar_msgs/lidar_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[20.724673] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/lib/liblidar_msgs__rosidl_generator_py.so\n'}
+[20.725243] (lidar_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/ole/oleros2/install/lidar_msgs/lib/liblidar_msgs__rosidl_generator_py.so" to ""\n'}
+[20.725556] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/share/lidar_msgs/srv/GetMetadata.idl\n'}
+[20.725906] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/share/lidar_msgs/msg/Metadata.idl\n'}
+[20.726217] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/share/lidar_msgs/srv/GetMetadata.srv\n'}
+[20.726595] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/share/lidar_msgs/srv/GetMetadata_Request.msg\n'}
+[20.726909] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/share/lidar_msgs/srv/GetMetadata_Response.msg\n'}
+[20.727238] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/share/lidar_msgs/msg/Metadata.msg\n'}
+[20.727610] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/share/ament_index/resource_index/package_run_dependencies/lidar_msgs\n'}
+[20.728027] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/share/ament_index/resource_index/parent_prefix_path/lidar_msgs\n'}
+[20.728345] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/share/lidar_msgs/environment/ament_prefix_path.sh\n'}
+[20.728703] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/share/lidar_msgs/environment/ament_prefix_path.dsv\n'}
+[20.729017] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/share/lidar_msgs/environment/path.sh\n'}
+[20.729333] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/share/lidar_msgs/environment/path.dsv\n'}
+[20.729668] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/share/lidar_msgs/local_setup.bash\n'}
+[20.729981] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/share/lidar_msgs/local_setup.sh\n'}
+[20.730293] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/share/lidar_msgs/local_setup.zsh\n'}
+[20.730630] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/share/lidar_msgs/local_setup.dsv\n'}
+[20.730935] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/share/lidar_msgs/package.dsv\n'}
+[20.731280] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/share/ament_index/resource_index/packages/lidar_msgs\n'}
+[20.731672] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/share/lidar_msgs/cmake/export_lidar_msgs__rosidl_generator_cExport.cmake\n'}
+[20.732097] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/share/lidar_msgs/cmake/export_lidar_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[20.732480] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/share/lidar_msgs/cmake/export_lidar_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[20.732835] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/share/lidar_msgs/cmake/export_lidar_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[20.733177] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/share/lidar_msgs/cmake/export_lidar_msgs__rosidl_generator_cppExport.cmake\n'}
+[20.733648] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/share/lidar_msgs/cmake/export_lidar_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[20.734002] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/share/lidar_msgs/cmake/export_lidar_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[20.734383] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/share/lidar_msgs/cmake/lidar_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[20.734711] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/share/lidar_msgs/cmake/lidar_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[20.735052] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/share/lidar_msgs/cmake/lidar_msgs__rosidl_typesupport_cExport.cmake\n'}
+[20.735403] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/share/lidar_msgs/cmake/lidar_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[20.735832] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/share/lidar_msgs/cmake/lidar_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[20.736181] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/share/lidar_msgs/cmake/lidar_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[20.736560] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/share/lidar_msgs/cmake/lidar_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[20.736906] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/share/lidar_msgs/cmake/lidar_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[20.737282] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/share/lidar_msgs/cmake/export_lidar_msgs__rosidl_generator_pyExport.cmake\n'}
+[20.737622] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/share/lidar_msgs/cmake/export_lidar_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[20.737953] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/share/lidar_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[20.738302] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/share/lidar_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[20.738650] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/share/lidar_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[20.738766] (-) TimerEvent: {}
+[20.739180] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/share/lidar_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[20.739542] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/share/lidar_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[20.739920] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/share/lidar_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[20.740269] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/share/lidar_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[20.740589] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/share/lidar_msgs/cmake/lidar_msgsConfig.cmake\n'}
+[20.740858] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/share/lidar_msgs/cmake/lidar_msgsConfig-version.cmake\n'}
+[20.741198] (lidar_msgs) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/lidar_msgs/share/lidar_msgs/package.xml\n'}
+[20.757808] (lidar_msgs) CommandEnded: {'returncode': 0}
+[20.838913] (-) TimerEvent: {}
+[20.885994] (lidar_msgs) JobEnded: {'identifier': 'lidar_msgs', 'rc': 0}
+[20.886657] (ros2_lidar) JobStarted: {'identifier': 'ros2_lidar'}
+[20.895804] (ros2_lidar) JobProgress: {'identifier': 'ros2_lidar', 'progress': 'cmake'}
+[20.896036] (ros2_lidar) Command: {'cmd': ['/usr/bin/cmake', '/home/ole/oleros2/src/ros2_lidar', '-DCMAKE_INSTALL_PREFIX=/home/ole/oleros2/install/ros2_lidar'], 'cwd': '/home/ole/oleros2/build/ros2_lidar', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'ole'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ole/oleros2/install/lidar_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ole'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '10044'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=2a3f52659f538c8932eea2576600d4da'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ole'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ole'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ole-VirtualBox:@/tmp/.ICE-unix/10044,unix/ole-VirtualBox:/tmp/.ICE-unix/10044'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/98b7cfb5_a8b1_4626_907c_5c8d6009f750'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.I25QL2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.113'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ole/oleros2/install/lidar_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ole/oleros2/build/ros2_lidar'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=2a3f52659f538c8932eea2576600d4da'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ole/oleros2/install/lidar_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/ole/oleros2/install/lidar_msgs:/opt/ros/humble')]), 'shell': False}
+[20.942879] (-) TimerEvent: {}
+[21.005857] (ros2_lidar) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[21.042991] (-) TimerEvent: {}
+[21.098658] (ros2_lidar) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[21.109816] (ros2_lidar) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[21.147408] (-) TimerEvent: {}
+[21.219178] (ros2_lidar) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[21.238462] (ros2_lidar) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[21.239286] (ros2_lidar) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[21.240263] (ros2_lidar) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[21.245929] (ros2_lidar) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[21.247521] (-) TimerEvent: {}
+[21.348559] (-) TimerEvent: {}
+[21.357354] (ros2_lidar) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[21.387735] (ros2_lidar) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[21.388620] (ros2_lidar) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[21.389996] (ros2_lidar) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[21.393342] (ros2_lidar) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[21.449824] (-) TimerEvent: {}
+[21.550690] (-) TimerEvent: {}
+[21.634363] (ros2_lidar) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[21.652922] (-) TimerEvent: {}
+[21.753416] (-) TimerEvent: {}
+[21.793134] (ros2_lidar) StdoutLine: {'line': b'-- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[21.853551] (-) TimerEvent: {}
+[21.876842] (ros2_lidar) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[21.894500] (ros2_lidar) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[21.909681] (ros2_lidar) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[21.936154] (ros2_lidar) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[21.953702] (-) TimerEvent: {}
+[21.974234] (ros2_lidar) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[22.053851] (-) TimerEvent: {}
+[22.154155] (-) TimerEvent: {}
+[22.210893] (ros2_lidar) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[22.220460] (ros2_lidar) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[22.254308] (-) TimerEvent: {}
+[22.354872] (-) TimerEvent: {}
+[22.455296] (-) TimerEvent: {}
+[22.527231] (ros2_lidar) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[22.555390] (-) TimerEvent: {}
+[22.572423] (ros2_lidar) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[22.655552] (-) TimerEvent: {}
+[22.656099] (ros2_lidar) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[22.743863] (ros2_lidar) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[22.755887] (-) TimerEvent: {}
+[22.842019] (ros2_lidar) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[22.842864] (ros2_lidar) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[22.856038] (-) TimerEvent: {}
+[22.941251] (ros2_lidar) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[22.943196] (ros2_lidar) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[22.956202] (-) TimerEvent: {}
+[23.056645] (-) TimerEvent: {}
+[23.157046] (-) TimerEvent: {}
+[23.257454] (-) TimerEvent: {}
+[23.358097] (-) TimerEvent: {}
+[23.454149] (ros2_lidar) StdoutLine: {'line': b'-- Found rclcpp_lifecycle: 16.0.8 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)\n'}
+[23.458148] (-) TimerEvent: {}
+[23.558525] (-) TimerEvent: {}
+[23.580762] (ros2_lidar) StdoutLine: {'line': b'-- Found rclcpp_components: 16.0.8 (/opt/ros/humble/share/rclcpp_components/cmake)\n'}
+[23.658958] (-) TimerEvent: {}
+[23.759321] (-) TimerEvent: {}
+[23.837725] (ros2_lidar) StdoutLine: {'line': b'-- Found std_srvs: 4.2.3 (/opt/ros/humble/share/std_srvs/cmake)\n'}
+[23.859449] (-) TimerEvent: {}
+[23.902014] (ros2_lidar) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[23.959563] (-) TimerEvent: {}
+[24.060650] (-) TimerEvent: {}
+[24.161050] (-) TimerEvent: {}
+[24.258739] (ros2_lidar) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.6 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)\n'}
+[24.261234] (-) TimerEvent: {}
+[24.362111] (-) TimerEvent: {}
+[24.384811] (ros2_lidar) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[24.398901] (ros2_lidar) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[24.399317] (ros2_lidar) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[24.462262] (-) TimerEvent: {}
+[24.562590] (-) TimerEvent: {}
+[24.662992] (-) TimerEvent: {}
+[24.763299] (-) TimerEvent: {}
+[24.864326] (-) TimerEvent: {}
+[24.964724] (-) TimerEvent: {}
+[25.065169] (-) TimerEvent: {}
+[25.165605] (-) TimerEvent: {}
+[25.227732] (ros2_lidar) StdoutLine: {'line': b'-- Found pcl_conversions: 2.4.0 (/opt/ros/humble/share/pcl_conversions/cmake)\n'}
+[25.265757] (-) TimerEvent: {}
+[25.366431] (-) TimerEvent: {}
+[25.466828] (-) TimerEvent: {}
+[25.559799] (ros2_lidar) StdoutLine: {'line': b'-- Found lidar_msgs: 0.2.0 (/home/ole/oleros2/install/lidar_msgs/share/lidar_msgs/cmake)\n'}
+[25.566963] (-) TimerEvent: {}
+[25.667309] (-) TimerEvent: {}
+[25.755578] (ros2_lidar) StdoutLine: {'line': b"-- Checking for module 'eigen3'\n"}
+[25.768383] (-) TimerEvent: {}
+[25.770548] (ros2_lidar) StdoutLine: {'line': b'--   Found eigen3, version 3.4.0\n'}
+[25.832034] (ros2_lidar) StdoutLine: {'line': b'-- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") \n'}
+[25.832334] (ros2_lidar) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[25.868502] (-) TimerEvent: {}
+[25.968936] (-) TimerEvent: {}
+[25.974972] (ros2_lidar) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.65.0") found components: system filesystem date_time iostreams serialization \n'}
+[26.008832] (ros2_lidar) StdoutLine: {'line': b'-- looking for PCL_COMMON\n'}
+[26.014465] (ros2_lidar) StdoutLine: {'line': b'-- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  \n'}
+[26.015446] (ros2_lidar) StdoutLine: {'line': b'-- Found PCL: pcl_common;Boost::system;Boost::filesystem;Boost::date_time;Boost::iostreams;Boost::serialization  \n'}
+[26.069078] (-) TimerEvent: {}
+[26.163843] (ros2_lidar) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[26.169287] (-) TimerEvent: {}
+[26.269666] (-) TimerEvent: {}
+[26.344018] (ros2_lidar) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[26.348168] (ros2_lidar) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[26.349332] (ros2_lidar) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/ole/oleros2/src/ros2_lidar/include\n'}
+[26.349526] (ros2_lidar) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[26.353498] (ros2_lidar) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[26.353720] (ros2_lidar) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[26.356157] (ros2_lidar) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[26.358641] (ros2_lidar) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[26.360506] (ros2_lidar) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[26.364077] (ros2_lidar) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[26.364302] (ros2_lidar) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[26.366190] (ros2_lidar) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[26.369775] (-) TimerEvent: {}
+[26.370411] (ros2_lidar) StdoutLine: {'line': b'-- Configuring done\n'}
+[26.470804] (-) TimerEvent: {}
+[26.571046] (-) TimerEvent: {}
+[26.671954] (-) TimerEvent: {}
+[26.756558] (ros2_lidar) StdoutLine: {'line': b'-- Generating done\n'}
+[26.760675] (ros2_lidar) StdoutLine: {'line': b'-- Build files have been written to: /home/ole/oleros2/build/ros2_lidar\n'}
+[26.772097] (-) TimerEvent: {}
+[26.777913] (ros2_lidar) CommandEnded: {'returncode': 0}
+[26.778418] (ros2_lidar) JobProgress: {'identifier': 'ros2_lidar', 'progress': 'build'}
+[26.778457] (ros2_lidar) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ole/oleros2/build/ros2_lidar', '--', '-j1', '-l1'], 'cwd': '/home/ole/oleros2/build/ros2_lidar', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'ole'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ole/oleros2/install/lidar_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ole'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '10044'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=2a3f52659f538c8932eea2576600d4da'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ole'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ole'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ole-VirtualBox:@/tmp/.ICE-unix/10044,unix/ole-VirtualBox:/tmp/.ICE-unix/10044'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/98b7cfb5_a8b1_4626_907c_5c8d6009f750'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.I25QL2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.113'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ole/oleros2/install/lidar_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ole/oleros2/build/ros2_lidar'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=2a3f52659f538c8932eea2576600d4da'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ole/oleros2/install/lidar_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/ole/oleros2/install/lidar_msgs:/opt/ros/humble')]), 'shell': False}
+[26.847331] (ros2_lidar) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object CMakeFiles/lidar_driver_core.dir/src/driver_types.cpp.o\x1b[0m\n'}
+[26.872214] (-) TimerEvent: {}
+[26.973543] (-) TimerEvent: {}
+[27.074025] (-) TimerEvent: {}
+[27.174426] (-) TimerEvent: {}
+[27.274848] (-) TimerEvent: {}
+[27.375220] (-) TimerEvent: {}
+[27.475615] (-) TimerEvent: {}
+[27.576022] (-) TimerEvent: {}
+[27.676415] (-) TimerEvent: {}
+[27.776765] (-) TimerEvent: {}
+[27.877099] (-) TimerEvent: {}
+[27.977897] (-) TimerEvent: {}
+[28.078382] (-) TimerEvent: {}
+[28.178787] (-) TimerEvent: {}
+[28.279141] (-) TimerEvent: {}
+[28.379636] (-) TimerEvent: {}
+[28.480009] (-) TimerEvent: {}
+[28.580428] (-) TimerEvent: {}
+[28.680808] (-) TimerEvent: {}
+[28.782042] (-) TimerEvent: {}
+[28.882423] (-) TimerEvent: {}
+[28.982824] (-) TimerEvent: {}
+[29.083180] (-) TimerEvent: {}
+[29.183593] (-) TimerEvent: {}
+[29.284876] (-) TimerEvent: {}
+[29.385274] (-) TimerEvent: {}
+[29.485699] (-) TimerEvent: {}
+[29.586588] (-) TimerEvent: {}
+[29.689126] (-) TimerEvent: {}
+[29.789545] (-) TimerEvent: {}
+[29.889968] (-) TimerEvent: {}
+[29.990397] (-) TimerEvent: {}
+[30.090811] (-) TimerEvent: {}
+[30.191263] (-) TimerEvent: {}
+[30.291665] (-) TimerEvent: {}
+[30.392289] (-) TimerEvent: {}
+[30.492710] (-) TimerEvent: {}
+[30.593009] (-) TimerEvent: {}
+[30.693713] (-) TimerEvent: {}
+[30.794034] (-) TimerEvent: {}
+[30.894440] (-) TimerEvent: {}
+[30.994816] (-) TimerEvent: {}
+[31.095171] (-) TimerEvent: {}
+[31.196101] (-) TimerEvent: {}
+[31.296560] (-) TimerEvent: {}
+[31.396969] (-) TimerEvent: {}
+[31.498205] (-) TimerEvent: {}
+[31.598607] (-) TimerEvent: {}
+[31.699085] (-) TimerEvent: {}
+[31.799451] (-) TimerEvent: {}
+[31.900132] (-) TimerEvent: {}
+[32.000567] (-) TimerEvent: {}
+[32.100906] (-) TimerEvent: {}
+[32.201804] (-) TimerEvent: {}
+[32.302238] (-) TimerEvent: {}
+[32.402649] (-) TimerEvent: {}
+[32.503088] (-) TimerEvent: {}
+[32.603542] (-) TimerEvent: {}
+[32.704256] (-) TimerEvent: {}
+[32.804613] (-) TimerEvent: {}
+[32.905057] (-) TimerEvent: {}
+[33.005464] (-) TimerEvent: {}
+[33.105978] (-) TimerEvent: {}
+[33.206393] (-) TimerEvent: {}
+[33.306871] (-) TimerEvent: {}
+[33.407307] (-) TimerEvent: {}
+[33.507719] (-) TimerEvent: {}
+[33.608180] (-) TimerEvent: {}
+[33.708611] (-) TimerEvent: {}
+[33.809582] (-) TimerEvent: {}
+[33.910097] (-) TimerEvent: {}
+[34.010557] (-) TimerEvent: {}
+[34.110992] (-) TimerEvent: {}
+[34.211450] (-) TimerEvent: {}
+[34.313241] (-) TimerEvent: {}
+[34.413920] (-) TimerEvent: {}
+[34.514381] (-) TimerEvent: {}
+[34.614869] (-) TimerEvent: {}
+[34.715311] (-) TimerEvent: {}
+[34.815753] (-) TimerEvent: {}
+[34.916246] (-) TimerEvent: {}
+[35.016690] (-) TimerEvent: {}
+[35.117095] (-) TimerEvent: {}
+[35.217521] (-) TimerEvent: {}
+[35.318014] (-) TimerEvent: {}
+[35.418562] (-) TimerEvent: {}
+[35.518988] (-) TimerEvent: {}
+[35.619455] (-) TimerEvent: {}
+[35.720141] (-) TimerEvent: {}
+[35.820586] (-) TimerEvent: {}
+[35.921057] (-) TimerEvent: {}
+[36.021462] (-) TimerEvent: {}
+[36.121920] (-) TimerEvent: {}
+[36.222351] (-) TimerEvent: {}
+[36.322760] (-) TimerEvent: {}
+[36.423543] (-) TimerEvent: {}
+[36.524093] (-) TimerEvent: {}
+[36.624468] (-) TimerEvent: {}
+[36.724933] (-) TimerEvent: {}
+[36.825354] (-) TimerEvent: {}
+[36.926435] (-) TimerEvent: {}
+[37.026961] (-) TimerEvent: {}
+[37.127375] (-) TimerEvent: {}
+[37.227775] (-) TimerEvent: {}
+[37.328717] (-) TimerEvent: {}
+[37.429661] (-) TimerEvent: {}
+[37.530055] (-) TimerEvent: {}
+[37.630469] (-) TimerEvent: {}
+[37.730891] (-) TimerEvent: {}
+[37.831378] (-) TimerEvent: {}
+[37.931812] (-) TimerEvent: {}
+[38.032823] (-) TimerEvent: {}
+[38.133275] (-) TimerEvent: {}
+[38.233682] (-) TimerEvent: {}
+[38.334095] (-) TimerEvent: {}
+[38.434523] (-) TimerEvent: {}
+[38.534923] (-) TimerEvent: {}
+[38.635347] (-) TimerEvent: {}
+[38.735793] (-) TimerEvent: {}
+[38.836456] (-) TimerEvent: {}
+[38.936881] (-) TimerEvent: {}
+[39.037581] (-) TimerEvent: {}
+[39.138026] (-) TimerEvent: {}
+[39.238473] (-) TimerEvent: {}
+[39.338963] (-) TimerEvent: {}
+[39.439391] (-) TimerEvent: {}
+[39.540928] (-) TimerEvent: {}
+[39.641557] (-) TimerEvent: {}
+[39.741978] (-) TimerEvent: {}
+[39.842403] (-) TimerEvent: {}
+[39.942780] (-) TimerEvent: {}
+[40.043387] (-) TimerEvent: {}
+[40.143779] (-) TimerEvent: {}
+[40.244504] (-) TimerEvent: {}
+[40.345099] (-) TimerEvent: {}
+[40.445661] (-) TimerEvent: {}
+[40.546023] (-) TimerEvent: {}
+[40.646591] (-) TimerEvent: {}
+[40.746980] (-) TimerEvent: {}
+[40.847379] (-) TimerEvent: {}
+[40.948593] (-) TimerEvent: {}
+[41.049022] (-) TimerEvent: {}
+[41.149465] (-) TimerEvent: {}
+[41.249979] (-) TimerEvent: {}
+[41.350382] (-) TimerEvent: {}
+[41.450802] (-) TimerEvent: {}
+[41.551229] (-) TimerEvent: {}
+[41.651637] (-) TimerEvent: {}
+[41.752223] (-) TimerEvent: {}
+[41.852806] (-) TimerEvent: {}
+[41.929006] (ros2_lidar) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/lidar_driver_core.dir/src/lidar_driver.cpp.o\x1b[0m\n'}
+[41.952952] (-) TimerEvent: {}
+[42.053948] (-) TimerEvent: {}
+[42.156010] (-) TimerEvent: {}
+[42.257714] (-) TimerEvent: {}
+[42.359768] (-) TimerEvent: {}
+[42.460880] (-) TimerEvent: {}
+[42.561344] (-) TimerEvent: {}
+[42.664377] (-) TimerEvent: {}
+[42.767438] (-) TimerEvent: {}
+[42.867879] (-) TimerEvent: {}
+[42.968371] (-) TimerEvent: {}
+[43.068760] (-) TimerEvent: {}
+[43.169202] (-) TimerEvent: {}
+[43.269598] (-) TimerEvent: {}
+[43.370020] (-) TimerEvent: {}
+[43.470466] (-) TimerEvent: {}
+[43.570860] (-) TimerEvent: {}
+[43.671264] (-) TimerEvent: {}
+[43.771732] (-) TimerEvent: {}
+[43.872600] (-) TimerEvent: {}
+[43.973016] (-) TimerEvent: {}
+[44.073507] (-) TimerEvent: {}
+[44.174182] (-) TimerEvent: {}
+[44.274991] (-) TimerEvent: {}
+[44.375441] (-) TimerEvent: {}
+[44.476117] (-) TimerEvent: {}
+[44.576697] (-) TimerEvent: {}
+[44.677126] (-) TimerEvent: {}
+[44.777658] (-) TimerEvent: {}
+[44.878429] (-) TimerEvent: {}
+[44.978838] (-) TimerEvent: {}
+[45.079246] (-) TimerEvent: {}
+[45.179644] (-) TimerEvent: {}
+[45.280046] (-) TimerEvent: {}
+[45.380424] (-) TimerEvent: {}
+[45.480981] (-) TimerEvent: {}
+[45.581423] (-) TimerEvent: {}
+[45.681858] (-) TimerEvent: {}
+[45.782313] (-) TimerEvent: {}
+[45.883246] (-) TimerEvent: {}
+[45.983698] (-) TimerEvent: {}
+[46.084439] (-) TimerEvent: {}
+[46.184896] (-) TimerEvent: {}
+[46.285336] (-) TimerEvent: {}
+[46.385784] (-) TimerEvent: {}
+[46.486231] (-) TimerEvent: {}
+[46.586655] (-) TimerEvent: {}
+[46.687071] (-) TimerEvent: {}
+[46.787509] (-) TimerEvent: {}
+[46.888120] (-) TimerEvent: {}
+[46.988669] (-) TimerEvent: {}
+[47.089091] (-) TimerEvent: {}
+[47.189564] (-) TimerEvent: {}
+[47.290017] (-) TimerEvent: {}
+[47.390993] (-) TimerEvent: {}
+[47.495709] (-) TimerEvent: {}
+[47.596141] (-) TimerEvent: {}
+[47.696662] (-) TimerEvent: {}
+[47.797115] (-) TimerEvent: {}
+[47.897852] (-) TimerEvent: {}
+[47.998248] (-) TimerEvent: {}
+[48.098700] (-) TimerEvent: {}
+[48.199157] (-) TimerEvent: {}
+[48.299628] (-) TimerEvent: {}
+[48.400770] (-) TimerEvent: {}
+[48.501205] (-) TimerEvent: {}
+[48.601651] (-) TimerEvent: {}
+[48.702133] (-) TimerEvent: {}
+[48.802525] (-) TimerEvent: {}
+[48.902926] (-) TimerEvent: {}
+[49.003350] (-) TimerEvent: {}
+[49.103756] (-) TimerEvent: {}
+[49.204404] (-) TimerEvent: {}
+[49.304847] (-) TimerEvent: {}
+[49.405294] (-) TimerEvent: {}
+[49.505767] (-) TimerEvent: {}
+[49.606257] (-) TimerEvent: {}
+[49.706676] (-) TimerEvent: {}
+[49.807089] (-) TimerEvent: {}
+[49.907475] (-) TimerEvent: {}
+[50.008078] (-) TimerEvent: {}
+[50.108625] (-) TimerEvent: {}
+[50.209018] (-) TimerEvent: {}
+[50.309475] (-) TimerEvent: {}
+[50.409910] (-) TimerEvent: {}
+[50.510931] (-) TimerEvent: {}
+[50.611297] (-) TimerEvent: {}
+[50.711792] (-) TimerEvent: {}
+[50.812478] (-) TimerEvent: {}
+[50.912909] (-) TimerEvent: {}
+[51.018459] (-) TimerEvent: {}
+[51.118897] (-) TimerEvent: {}
+[51.219336] (-) TimerEvent: {}
+[51.319784] (-) TimerEvent: {}
+[51.420797] (-) TimerEvent: {}
+[51.523801] (-) TimerEvent: {}
+[51.624194] (-) TimerEvent: {}
+[51.724647] (-) TimerEvent: {}
+[51.825054] (-) TimerEvent: {}
+[51.925468] (-) TimerEvent: {}
+[52.025913] (-) TimerEvent: {}
+[52.131772] (-) TimerEvent: {}
+[52.232219] (-) TimerEvent: {}
+[52.332620] (-) TimerEvent: {}
+[52.433081] (-) TimerEvent: {}
+[52.533515] (-) TimerEvent: {}
+[52.633924] (-) TimerEvent: {}
+[52.734494] (-) TimerEvent: {}
+[52.834992] (-) TimerEvent: {}
+[52.935420] (-) TimerEvent: {}
+[53.036535] (-) TimerEvent: {}
+[53.137105] (-) TimerEvent: {}
+[53.237531] (-) TimerEvent: {}
+[53.337967] (-) TimerEvent: {}
+[53.438531] (-) TimerEvent: {}
+[53.538970] (-) TimerEvent: {}
+[53.642279] (-) TimerEvent: {}
+[53.742795] (-) TimerEvent: {}
+[53.843232] (-) TimerEvent: {}
+[53.943661] (-) TimerEvent: {}
+[54.044257] (-) TimerEvent: {}
+[54.144657] (-) TimerEvent: {}
+[54.245445] (-) TimerEvent: {}
+[54.345868] (-) TimerEvent: {}
+[54.446320] (-) TimerEvent: {}
+[54.546803] (-) TimerEvent: {}
+[54.647207] (-) TimerEvent: {}
+[54.747645] (-) TimerEvent: {}
+[54.848570] (-) TimerEvent: {}
+[54.948977] (-) TimerEvent: {}
+[55.049408] (-) TimerEvent: {}
+[55.149813] (-) TimerEvent: {}
+[55.250898] (-) TimerEvent: {}
+[55.351458] (-) TimerEvent: {}
+[55.452064] (-) TimerEvent: {}
+[55.552643] (-) TimerEvent: {}
+[55.653055] (-) TimerEvent: {}
+[55.753362] (-) TimerEvent: {}
+[55.853748] (-) TimerEvent: {}
+[55.954134] (-) TimerEvent: {}
+[56.054579] (-) TimerEvent: {}
+[56.155010] (-) TimerEvent: {}
+[56.255449] (-) TimerEvent: {}
+[56.356264] (-) TimerEvent: {}
+[56.456672] (-) TimerEvent: {}
+[56.557058] (-) TimerEvent: {}
+[56.657520] (-) TimerEvent: {}
+[56.757951] (-) TimerEvent: {}
+[56.858329] (-) TimerEvent: {}
+[56.958710] (-) TimerEvent: {}
+[57.059179] (-) TimerEvent: {}
+[57.159610] (-) TimerEvent: {}
+[57.260618] (-) TimerEvent: {}
+[57.362188] (-) TimerEvent: {}
+[57.462685] (-) TimerEvent: {}
+[57.563405] (-) TimerEvent: {}
+[57.663853] (-) TimerEvent: {}
+[57.764324] (-) TimerEvent: {}
+[57.868528] (-) TimerEvent: {}
+[57.968959] (-) TimerEvent: {}
+[58.069413] (-) TimerEvent: {}
+[58.169843] (-) TimerEvent: {}
+[58.270272] (-) TimerEvent: {}
+[58.371475] (-) TimerEvent: {}
+[58.472033] (-) TimerEvent: {}
+[58.572637] (-) TimerEvent: {}
+[58.673065] (-) TimerEvent: {}
+[58.773460] (-) TimerEvent: {}
+[58.873917] (-) TimerEvent: {}
+[58.974316] (-) TimerEvent: {}
+[59.074777] (-) TimerEvent: {}
+[59.175282] (-) TimerEvent: {}
+[59.275682] (-) TimerEvent: {}
+[59.376094] (-) TimerEvent: {}
+[59.477312] (-) TimerEvent: {}
+[59.577768] (-) TimerEvent: {}
+[59.678180] (-) TimerEvent: {}
+[59.778613] (-) TimerEvent: {}
+[59.879018] (-) TimerEvent: {}
+[59.979739] (-) TimerEvent: {}
+[60.080176] (-) TimerEvent: {}
+[60.180579] (-) TimerEvent: {}
+[60.281020] (-) TimerEvent: {}
+[60.381457] (-) TimerEvent: {}
+[60.484702] (-) TimerEvent: {}
+[60.585197] (-) TimerEvent: {}
+[60.685686] (-) TimerEvent: {}
+[60.786070] (-) TimerEvent: {}
+[60.886474] (-) TimerEvent: {}
+[60.986934] (-) TimerEvent: {}
+[61.087363] (-) TimerEvent: {}
+[61.188261] (-) TimerEvent: {}
+[61.288663] (-) TimerEvent: {}
+[61.389411] (-) TimerEvent: {}
+[61.491450] (-) TimerEvent: {}
+[61.591964] (-) TimerEvent: {}
+[61.692554] (-) TimerEvent: {}
+[61.792986] (-) TimerEvent: {}
+[61.893407] (-) TimerEvent: {}
+[61.993823] (-) TimerEvent: {}
+[62.094914] (-) TimerEvent: {}
+[62.197944] (-) TimerEvent: {}
+[62.298372] (-) TimerEvent: {}
+[62.373845] (ros2_lidar) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/lidar_driver_core.dir/src/lifecycle_interface.cpp.o\x1b[0m\n'}
+[62.398883] (-) TimerEvent: {}
+[62.499291] (-) TimerEvent: {}
+[62.599787] (-) TimerEvent: {}
+[62.700580] (-) TimerEvent: {}
+[62.801050] (-) TimerEvent: {}
+[62.901481] (-) TimerEvent: {}
+[63.002317] (-) TimerEvent: {}
+[63.102796] (-) TimerEvent: {}
+[63.203239] (-) TimerEvent: {}
+[63.303682] (-) TimerEvent: {}
+[63.404708] (-) TimerEvent: {}
+[63.505169] (-) TimerEvent: {}
+[63.605582] (-) TimerEvent: {}
+[63.706026] (-) TimerEvent: {}
+[63.806496] (-) TimerEvent: {}
+[63.906955] (-) TimerEvent: {}
+[64.007450] (-) TimerEvent: {}
+[64.108477] (-) TimerEvent: {}
+[64.208887] (-) TimerEvent: {}
+[64.309330] (-) TimerEvent: {}
+[64.409828] (-) TimerEvent: {}
+[64.510263] (-) TimerEvent: {}
+[64.610685] (-) TimerEvent: {}
+[64.714648] (-) TimerEvent: {}
+[64.815494] (-) TimerEvent: {}
+[64.916080] (-) TimerEvent: {}
+[65.016699] (-) TimerEvent: {}
+[65.117081] (-) TimerEvent: {}
+[65.217846] (-) TimerEvent: {}
+[65.318263] (-) TimerEvent: {}
+[65.418658] (-) TimerEvent: {}
+[65.519080] (-) TimerEvent: {}
+[65.619559] (-) TimerEvent: {}
+[65.720484] (-) TimerEvent: {}
+[65.820908] (-) TimerEvent: {}
+[65.921284] (-) TimerEvent: {}
+[66.021690] (-) TimerEvent: {}
+[66.122096] (-) TimerEvent: {}
+[66.222481] (-) TimerEvent: {}
+[66.324285] (-) TimerEvent: {}
+[66.424998] (-) TimerEvent: {}
+[66.525817] (-) TimerEvent: {}
+[66.626239] (-) TimerEvent: {}
+[66.726635] (-) TimerEvent: {}
+[66.832216] (-) TimerEvent: {}
+[66.933822] (-) TimerEvent: {}
+[67.034250] (-) TimerEvent: {}
+[67.134677] (-) TimerEvent: {}
+[67.235116] (-) TimerEvent: {}
+[67.335938] (-) TimerEvent: {}
+[67.436432] (-) TimerEvent: {}
+[67.536823] (-) TimerEvent: {}
+[67.543961] (ros2_lidar) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/lidar_driver_core.dir/src/OS1/OS1_sensor.cpp.o\x1b[0m\n'}
+[67.636978] (-) TimerEvent: {}
+[67.737410] (-) TimerEvent: {}
+[67.837790] (-) TimerEvent: {}
+[67.938240] (-) TimerEvent: {}
+[68.038700] (-) TimerEvent: {}
+[68.139141] (-) TimerEvent: {}
+[68.239552] (-) TimerEvent: {}
+[68.340678] (-) TimerEvent: {}
+[68.441079] (-) TimerEvent: {}
+[68.541544] (-) TimerEvent: {}
+[68.641979] (-) TimerEvent: {}
+[68.742409] (-) TimerEvent: {}
+[68.842811] (-) TimerEvent: {}
+[68.943225] (-) TimerEvent: {}
+[69.043732] (-) TimerEvent: {}
+[69.144291] (-) TimerEvent: {}
+[69.244731] (-) TimerEvent: {}
+[69.345189] (-) TimerEvent: {}
+[69.446201] (-) TimerEvent: {}
+[69.546747] (-) TimerEvent: {}
+[69.647211] (-) TimerEvent: {}
+[69.747625] (-) TimerEvent: {}
+[69.848356] (-) TimerEvent: {}
+[69.948736] (-) TimerEvent: {}
+[70.049133] (-) TimerEvent: {}
+[70.151802] (-) TimerEvent: {}
+[70.252593] (-) TimerEvent: {}
+[70.352997] (-) TimerEvent: {}
+[70.453452] (-) TimerEvent: {}
+[70.553960] (-) TimerEvent: {}
+[70.654367] (-) TimerEvent: {}
+[70.754753] (-) TimerEvent: {}
+[70.855145] (-) TimerEvent: {}
+[70.955600] (-) TimerEvent: {}
+[71.056236] (-) TimerEvent: {}
+[71.156672] (-) TimerEvent: {}
+[71.257160] (-) TimerEvent: {}
+[71.357604] (-) TimerEvent: {}
+[71.458003] (-) TimerEvent: {}
+[71.558434] (-) TimerEvent: {}
+[71.658875] (-) TimerEvent: {}
+[71.759431] (-) TimerEvent: {}
+[71.859784] (-) TimerEvent: {}
+[71.960295] (-) TimerEvent: {}
+[72.060811] (-) TimerEvent: {}
+[72.161278] (-) TimerEvent: {}
+[72.261707] (-) TimerEvent: {}
+[72.362107] (-) TimerEvent: {}
+[72.462522] (-) TimerEvent: {}
+[72.563879] (-) TimerEvent: {}
+[72.664611] (-) TimerEvent: {}
+[72.765058] (-) TimerEvent: {}
+[72.865545] (-) TimerEvent: {}
+[72.966264] (-) TimerEvent: {}
+[73.071759] (-) TimerEvent: {}
+[73.172257] (-) TimerEvent: {}
+[73.272650] (-) TimerEvent: {}
+[73.373411] (-) TimerEvent: {}
+[73.474009] (-) TimerEvent: {}
+[73.574463] (-) TimerEvent: {}
+[73.674901] (-) TimerEvent: {}
+[73.775367] (-) TimerEvent: {}
+[73.875752] (-) TimerEvent: {}
+[73.976177] (-) TimerEvent: {}
+[74.076581] (-) TimerEvent: {}
+[74.177098] (-) TimerEvent: {}
+[74.277533] (-) TimerEvent: {}
+[74.377998] (-) TimerEvent: {}
+[74.478432] (-) TimerEvent: {}
+[74.578982] (-) TimerEvent: {}
+[74.680604] (-) TimerEvent: {}
+[74.783540] (-) TimerEvent: {}
+[74.883969] (-) TimerEvent: {}
+[74.984602] (-) TimerEvent: {}
+[75.085008] (-) TimerEvent: {}
+[75.185370] (-) TimerEvent: {}
+[75.285830] (-) TimerEvent: {}
+[75.386217] (-) TimerEvent: {}
+[75.486617] (-) TimerEvent: {}
+[75.587157] (-) TimerEvent: {}
+[75.687633] (-) TimerEvent: {}
+[75.791762] (-) TimerEvent: {}
+[75.892743] (-) TimerEvent: {}
+[75.993324] (-) TimerEvent: {}
+[76.093740] (-) TimerEvent: {}
+[76.194169] (-) TimerEvent: {}
+[76.294637] (-) TimerEvent: {}
+[76.395040] (-) TimerEvent: {}
+[76.495458] (-) TimerEvent: {}
+[76.595898] (-) TimerEvent: {}
+[76.696425] (-) TimerEvent: {}
+[76.796873] (-) TimerEvent: {}
+[76.897288] (-) TimerEvent: {}
+[76.997723] (-) TimerEvent: {}
+[77.098122] (-) TimerEvent: {}
+[77.198497] (-) TimerEvent: {}
+[77.298920] (-) TimerEvent: {}
+[77.399400] (-) TimerEvent: {}
+[77.500037] (-) TimerEvent: {}
+[77.600624] (-) TimerEvent: {}
+[77.701020] (-) TimerEvent: {}
+[77.801804] (-) TimerEvent: {}
+[77.910204] (-) TimerEvent: {}
+[78.010687] (-) TimerEvent: {}
+[78.111102] (-) TimerEvent: {}
+[78.211535] (-) TimerEvent: {}
+[78.312494] (-) TimerEvent: {}
+[78.412908] (-) TimerEvent: {}
+[78.513354] (-) TimerEvent: {}
+[78.613785] (-) TimerEvent: {}
+[78.714177] (-) TimerEvent: {}
+[78.817388] (-) TimerEvent: {}
+[78.918052] (-) TimerEvent: {}
+[79.018481] (-) TimerEvent: {}
+[79.118893] (-) TimerEvent: {}
+[79.219337] (-) TimerEvent: {}
+[79.319787] (-) TimerEvent: {}
+[79.420209] (-) TimerEvent: {}
+[79.520633] (-) TimerEvent: {}
+[79.621055] (-) TimerEvent: {}
+[79.721492] (-) TimerEvent: {}
+[79.821906] (-) TimerEvent: {}
+[79.922771] (-) TimerEvent: {}
+[80.023155] (-) TimerEvent: {}
+[80.123594] (-) TimerEvent: {}
+[80.224473] (-) TimerEvent: {}
+[80.324868] (-) TimerEvent: {}
+[80.425645] (-) TimerEvent: {}
+[80.499422] (ros2_lidar) StdoutLine: {'line': b'[ 71%] \x1b[32m\x1b[1mLinking CXX shared library liblidar_driver_core.so\x1b[0m\n'}
+[80.526238] (-) TimerEvent: {}
+[80.626641] (-) TimerEvent: {}
+[80.727016] (-) TimerEvent: {}
+[80.827315] (-) TimerEvent: {}
+[80.927729] (-) TimerEvent: {}
+[81.028124] (-) TimerEvent: {}
+[81.128398] (-) TimerEvent: {}
+[81.228780] (-) TimerEvent: {}
+[81.329188] (-) TimerEvent: {}
+[81.429741] (-) TimerEvent: {}
+[81.530146] (-) TimerEvent: {}
+[81.630955] (-) TimerEvent: {}
+[81.731378] (-) TimerEvent: {}
+[81.832050] (-) TimerEvent: {}
+[81.849732] (ros2_lidar) StdoutLine: {'line': b'[ 71%] Built target lidar_driver_core\n'}
+[81.884964] (ros2_lidar) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding CXX object CMakeFiles/lidar_driver.dir/src/main.cpp.o\x1b[0m\n'}
+[81.948322] (-) TimerEvent: {}
+[82.048856] (-) TimerEvent: {}
+[82.149325] (-) TimerEvent: {}
+[82.249747] (-) TimerEvent: {}
+[82.350197] (-) TimerEvent: {}
+[82.450631] (-) TimerEvent: {}
+[82.551081] (-) TimerEvent: {}
+[82.651491] (-) TimerEvent: {}
+[82.751935] (-) TimerEvent: {}
+[82.852509] (-) TimerEvent: {}
+[82.952909] (-) TimerEvent: {}
+[83.053337] (-) TimerEvent: {}
+[83.153826] (-) TimerEvent: {}
+[83.254247] (-) TimerEvent: {}
+[83.354687] (-) TimerEvent: {}
+[83.455099] (-) TimerEvent: {}
+[83.555534] (-) TimerEvent: {}
+[83.656226] (-) TimerEvent: {}
+[83.756769] (-) TimerEvent: {}
+[83.857202] (-) TimerEvent: {}
+[83.957673] (-) TimerEvent: {}
+[84.058155] (-) TimerEvent: {}
+[84.158577] (-) TimerEvent: {}
+[84.259006] (-) TimerEvent: {}
+[84.359476] (-) TimerEvent: {}
+[84.459890] (-) TimerEvent: {}
+[84.560480] (-) TimerEvent: {}
+[84.660882] (-) TimerEvent: {}
+[84.761647] (-) TimerEvent: {}
+[84.862057] (-) TimerEvent: {}
+[84.962504] (-) TimerEvent: {}
+[85.062941] (-) TimerEvent: {}
+[85.163368] (-) TimerEvent: {}
+[85.263801] (-) TimerEvent: {}
+[85.364254] (-) TimerEvent: {}
+[85.464750] (-) TimerEvent: {}
+[85.565170] (-) TimerEvent: {}
+[85.665706] (-) TimerEvent: {}
+[85.766171] (-) TimerEvent: {}
+[85.866596] (-) TimerEvent: {}
+[85.966997] (-) TimerEvent: {}
+[86.068011] (-) TimerEvent: {}
+[86.168588] (-) TimerEvent: {}
+[86.268986] (-) TimerEvent: {}
+[86.375767] (-) TimerEvent: {}
+[86.476167] (-) TimerEvent: {}
+[86.576603] (-) TimerEvent: {}
+[86.677026] (-) TimerEvent: {}
+[86.777436] (-) TimerEvent: {}
+[86.877869] (-) TimerEvent: {}
+[86.982482] (-) TimerEvent: {}
+[87.082985] (-) TimerEvent: {}
+[87.183415] (-) TimerEvent: {}
+[87.284714] (-) TimerEvent: {}
+[87.385132] (-) TimerEvent: {}
+[87.485589] (-) TimerEvent: {}
+[87.586087] (-) TimerEvent: {}
+[87.686524] (-) TimerEvent: {}
+[87.786931] (-) TimerEvent: {}
+[87.887309] (-) TimerEvent: {}
+[87.987744] (-) TimerEvent: {}
+[88.088362] (-) TimerEvent: {}
+[88.188773] (-) TimerEvent: {}
+[88.289232] (-) TimerEvent: {}
+[88.389671] (-) TimerEvent: {}
+[88.490084] (-) TimerEvent: {}
+[88.590496] (-) TimerEvent: {}
+[88.690914] (-) TimerEvent: {}
+[88.791305] (-) TimerEvent: {}
+[88.891737] (-) TimerEvent: {}
+[88.992617] (-) TimerEvent: {}
+[89.093010] (-) TimerEvent: {}
+[89.193463] (-) TimerEvent: {}
+[89.293874] (-) TimerEvent: {}
+[89.394288] (-) TimerEvent: {}
+[89.494647] (-) TimerEvent: {}
+[89.595092] (-) TimerEvent: {}
+[89.695485] (-) TimerEvent: {}
+[89.796301] (-) TimerEvent: {}
+[89.896890] (-) TimerEvent: {}
+[89.997289] (-) TimerEvent: {}
+[90.097698] (-) TimerEvent: {}
+[90.198189] (-) TimerEvent: {}
+[90.298600] (-) TimerEvent: {}
+[90.399053] (-) TimerEvent: {}
+[90.499465] (-) TimerEvent: {}
+[90.599944] (-) TimerEvent: {}
+[90.700537] (-) TimerEvent: {}
+[90.800913] (-) TimerEvent: {}
+[90.901336] (-) TimerEvent: {}
+[91.001762] (-) TimerEvent: {}
+[91.102187] (-) TimerEvent: {}
+[91.202608] (-) TimerEvent: {}
+[91.303011] (-) TimerEvent: {}
+[91.403459] (-) TimerEvent: {}
+[91.504191] (-) TimerEvent: {}
+[91.604607] (-) TimerEvent: {}
+[91.705044] (-) TimerEvent: {}
+[91.805879] (-) TimerEvent: {}
+[91.906264] (-) TimerEvent: {}
+[92.006690] (-) TimerEvent: {}
+[92.107100] (-) TimerEvent: {}
+[92.207619] (-) TimerEvent: {}
+[92.308472] (-) TimerEvent: {}
+[92.408926] (-) TimerEvent: {}
+[92.509391] (-) TimerEvent: {}
+[92.610396] (-) TimerEvent: {}
+[92.670141] (ros2_lidar) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable lidar_driver\x1b[0m\n'}
+[92.710552] (-) TimerEvent: {}
+[92.810965] (-) TimerEvent: {}
+[92.911349] (-) TimerEvent: {}
+[93.011728] (-) TimerEvent: {}
+[93.112136] (-) TimerEvent: {}
+[93.213111] (-) TimerEvent: {}
+[93.223229] (ros2_lidar) StdoutLine: {'line': b'[100%] Built target lidar_driver\n'}
+[93.236173] (ros2_lidar) CommandEnded: {'returncode': 0}
+[93.287965] (ros2_lidar) JobProgress: {'identifier': 'ros2_lidar', 'progress': 'install'}
+[93.288035] (ros2_lidar) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ole/oleros2/build/ros2_lidar'], 'cwd': '/home/ole/oleros2/build/ros2_lidar', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'ole'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ole/oleros2/install/lidar_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ole'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '10044'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=2a3f52659f538c8932eea2576600d4da'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ole'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ole'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ole-VirtualBox:@/tmp/.ICE-unix/10044,unix/ole-VirtualBox:/tmp/.ICE-unix/10044'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/98b7cfb5_a8b1_4626_907c_5c8d6009f750'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.I25QL2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.113'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ole/oleros2/install/lidar_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ole/oleros2/build/ros2_lidar'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=2a3f52659f538c8932eea2576600d4da'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ole/oleros2/install/lidar_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/ole/oleros2/install/lidar_msgs:/opt/ros/humble')]), 'shell': False}
+[93.298645] (ros2_lidar) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[93.299133] (ros2_lidar) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/ros2_lidar/lib/ros2_lidar/lidar_driver\n'}
+[93.300028] (ros2_lidar) StdoutLine: {'line': b'-- Set runtime path of "/home/ole/oleros2/install/ros2_lidar/lib/ros2_lidar/lidar_driver" to ""\n'}
+[93.300337] (ros2_lidar) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/ros2_lidar/lib/liblidar_driver_core.so\n'}
+[93.306493] (ros2_lidar) StdoutLine: {'line': b'-- Set runtime path of "/home/ole/oleros2/install/ros2_lidar/lib/liblidar_driver_core.so" to ""\n'}
+[93.306851] (ros2_lidar) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/ros2_lidar/include/\n'}
+[93.307234] (ros2_lidar) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/ros2_lidar/include//ros2_lidar\n'}
+[93.307500] (ros2_lidar) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/ros2_lidar/include//ros2_lidar/lidar_driver.hpp\n'}
+[93.307806] (ros2_lidar) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/ros2_lidar/include//ros2_lidar/exception.hpp\n'}
+[93.308167] (ros2_lidar) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/ros2_lidar/include//ros2_lidar/image_os.hpp\n'}
+[93.308456] (ros2_lidar) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/ros2_lidar/include//ros2_lidar/point_os.hpp\n'}
+[93.308732] (ros2_lidar) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/ros2_lidar/include//ros2_lidar/scan_os.hpp\n'}
+[93.309009] (ros2_lidar) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/ros2_lidar/include//ros2_lidar/string_utils.hpp\n'}
+[93.309342] (ros2_lidar) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/ros2_lidar/include//ros2_lidar/OS1\n'}
+[93.309588] (ros2_lidar) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/ros2_lidar/include//ros2_lidar/OS1/OS1_util.hpp\n'}
+[93.309883] (ros2_lidar) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/ros2_lidar/include//ros2_lidar/OS1/OS1_sensor.hpp\n'}
+[93.310189] (ros2_lidar) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/ros2_lidar/include//ros2_lidar/OS1/OS1.hpp\n'}
+[93.310473] (ros2_lidar) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/ros2_lidar/include//ros2_lidar/OS1/processors\n'}
+[93.310718] (ros2_lidar) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/ros2_lidar/include//ros2_lidar/OS1/processors/scan_processor.hpp\n'}
+[93.311030] (ros2_lidar) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/ros2_lidar/include//ros2_lidar/OS1/processors/image_processor.hpp\n'}
+[93.311336] (ros2_lidar) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/ros2_lidar/include//ros2_lidar/OS1/processors/pointcloud_processor.hpp\n'}
+[93.311625] (ros2_lidar) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/ros2_lidar/include//ros2_lidar/OS1/OS1_packet.hpp\n'}
+[93.312019] (ros2_lidar) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/ros2_lidar/include//ros2_lidar/OS1/processor_factories.hpp\n'}
+[93.312441] (ros2_lidar) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/ros2_lidar/include//ros2_lidar/driver_types.hpp\n'}
+[93.312776] (ros2_lidar) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/ros2_lidar/include//ros2_lidar/interfaces\n'}
+[93.313050] (ros2_lidar) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/ros2_lidar/include//ros2_lidar/interfaces/metadata.hpp\n'}
+[93.313166] (-) TimerEvent: {}
+[93.313562] (ros2_lidar) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/ros2_lidar/include//ros2_lidar/interfaces/configuration.hpp\n'}
+[93.313936] (ros2_lidar) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/ros2_lidar/include//ros2_lidar/interfaces/data_processor_interface.hpp\n'}
+[93.314259] (ros2_lidar) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/ros2_lidar/include//ros2_lidar/interfaces/lifecycle_interface.hpp\n'}
+[93.314545] (ros2_lidar) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/ros2_lidar/include//ros2_lidar/interfaces/sensor_interface.hpp\n'}
+[93.314809] (ros2_lidar) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/ros2_lidar/include//ros2_lidar/conversions.hpp\n'}
+[93.315172] (ros2_lidar) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/ros2_lidar/share/ros2_lidar/launch\n'}
+[93.315440] (ros2_lidar) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/ros2_lidar/share/ros2_lidar/launch/ole2dv2_launch.py\n'}
+[93.315780] (ros2_lidar) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/ros2_lidar/share/ros2_lidar/launch/os1_launch.py\n'}
+[93.316049] (ros2_lidar) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/ros2_lidar/share/ros2_lidar/launch/ole3dv2_launch.py\n'}
+[93.316431] (ros2_lidar) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/ros2_lidar/share/ros2_lidar/params\n'}
+[93.316660] (ros2_lidar) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/ros2_lidar/share/ros2_lidar/params/ole3dv2.yaml\n'}
+[93.316919] (ros2_lidar) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/ros2_lidar/share/ros2_lidar/params/os1.yaml\n'}
+[93.317201] (ros2_lidar) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/ros2_lidar/share/ros2_lidar/params/ole2dv2.yaml\n'}
+[93.317553] (ros2_lidar) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/ros2_lidar/share/ros2_lidar/environment/library_path.sh\n'}
+[93.317897] (ros2_lidar) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/ros2_lidar/share/ros2_lidar/environment/library_path.dsv\n'}
+[93.318297] (ros2_lidar) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/ros2_lidar/share/ament_index/resource_index/package_run_dependencies/ros2_lidar\n'}
+[93.318650] (ros2_lidar) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/ros2_lidar/share/ament_index/resource_index/parent_prefix_path/ros2_lidar\n'}
+[93.318973] (ros2_lidar) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/ros2_lidar/share/ros2_lidar/environment/ament_prefix_path.sh\n'}
+[93.319306] (ros2_lidar) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/ros2_lidar/share/ros2_lidar/environment/ament_prefix_path.dsv\n'}
+[93.319621] (ros2_lidar) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/ros2_lidar/share/ros2_lidar/environment/path.sh\n'}
+[93.320002] (ros2_lidar) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/ros2_lidar/share/ros2_lidar/environment/path.dsv\n'}
+[93.320363] (ros2_lidar) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/ros2_lidar/share/ros2_lidar/local_setup.bash\n'}
+[93.320668] (ros2_lidar) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/ros2_lidar/share/ros2_lidar/local_setup.sh\n'}
+[93.320978] (ros2_lidar) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/ros2_lidar/share/ros2_lidar/local_setup.zsh\n'}
+[93.321314] (ros2_lidar) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/ros2_lidar/share/ros2_lidar/local_setup.dsv\n'}
+[93.321615] (ros2_lidar) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/ros2_lidar/share/ros2_lidar/package.dsv\n'}
+[93.321958] (ros2_lidar) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/ros2_lidar/share/ament_index/resource_index/packages/ros2_lidar\n'}
+[93.322330] (ros2_lidar) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/ros2_lidar/share/ament_index/resource_index/rclcpp_components/ros2_lidar\n'}
+[93.322673] (ros2_lidar) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/ros2_lidar/share/ros2_lidar/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[93.323010] (ros2_lidar) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/ros2_lidar/share/ros2_lidar/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[93.323334] (ros2_lidar) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/ros2_lidar/share/ros2_lidar/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[93.324028] (ros2_lidar) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/ros2_lidar/share/ros2_lidar/cmake/ros2_lidarConfig.cmake\n'}
+[93.324306] (ros2_lidar) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/ros2_lidar/share/ros2_lidar/cmake/ros2_lidarConfig-version.cmake\n'}
+[93.324618] (ros2_lidar) StdoutLine: {'line': b'-- Installing: /home/ole/oleros2/install/ros2_lidar/share/ros2_lidar/package.xml\n'}
+[93.327790] (ros2_lidar) CommandEnded: {'returncode': 0}
+[93.402134] (ros2_lidar) JobEnded: {'identifier': 'ros2_lidar', 'rc': 0}
+[93.403002] (-) EventReactorShutdown: {}
